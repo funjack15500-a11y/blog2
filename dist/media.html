@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zz资源库 | 影视追番表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;700&family=Noto+Sans+SC:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <audio id="bgAudio" src="./知我.webm" preload="auto" loop autoplay></audio>
+    <div class="ambient"></div>
+    <header class="site-header">
+      <div class="logo">zz资源库</div>
+      <nav class="nav">
+        <a href="./index.html#about">关于</a>
+        <a href="./index.html#posts">文章</a>
+        <a href="./index.html#projects">项目</a>
+        <a href="./index.html#notes">随记</a>
+        <a href="./media.html">追番</a>
+        <a href="./index.html#contact">联系</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle">暗色</button>
+    </header>
+
+    <div class="controls-floating">
+      <button class="control-btn" id="audioToggle">音乐播放</button>
+    </div>
+
+    <main>
+      <section class="section media" id="media">
+        <div class="section-title">
+          <h2>影视追番表</h2>
+          <p>仅保留影视表格与资源链接。</p>
+        </div>
+        <div class="media-links" id="mediaLinks"></div>
+        <div class="media-table" id="mediaTables">加载中...</div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 zz资源库 · 影视资源持续更新</p>
+    </footer>
+
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+      const mediaLinks = document.getElementById("mediaLinks");
+      const mediaTables = document.getElementById("mediaTables");
+      const bgAudio = document.getElementById("bgAudio");
+      const audioToggle = document.getElementById("audioToggle");
+
+      const applyTheme = (theme) => {
+        document.body.setAttribute("data-theme", theme);
+        themeToggle.textContent = theme === "light" ? "暗色" : "亮色";
+        localStorage.setItem("theme", theme);
+      };
+
+      const savedTheme = localStorage.getItem("theme") || "dark";
+      applyTheme(savedTheme);
+
+      themeToggle.addEventListener("click", () => {
+        const nextTheme =
+          document.body.getAttribute("data-theme") === "light" ? "dark" : "light";
+        applyTheme(nextTheme);
+      });
+
+      const updateAudioToggle = () => {
+        if (!audioToggle || !bgAudio) {
+          return;
+        }
+        audioToggle.textContent = bgAudio.paused ? "播放" : "暂停";
+      };
+
+      const tryAutoPlay = () => {
+        if (!bgAudio) {
+          return;
+        }
+        const attempt = bgAudio.play();
+        if (attempt && typeof attempt.then === "function") {
+          attempt
+            .then(() => {
+              updateAudioToggle();
+            })
+            .catch(() => {
+              updateAudioToggle();
+            });
+        } else {
+          updateAudioToggle();
+        }
+      };
+
+      if (audioToggle) {
+        audioToggle.addEventListener("click", () => {
+          if (!bgAudio) {
+            return;
+          }
+          if (bgAudio.paused) {
+            bgAudio.play().then(updateAudioToggle);
+          } else {
+            bgAudio.pause();
+            updateAudioToggle();
+          }
+        });
+      }
+
+      document.addEventListener(
+        "click",
+        () => {
+          if (bgAudio && bgAudio.paused) {
+            bgAudio.play().then(updateAudioToggle);
+          }
+        },
+        { once: true }
+      );
+
+      const normalizeLink = (url) => {
+        if (!url) return "";
+        return url.replace(/&amp;/g, "&");
+      };
+
+      const addLinkButton = (label, href) => {
+        if (!href) return;
+        const link = document.createElement("a");
+        link.className = "btn ghost";
+        link.textContent = label;
+        link.href = href;
+        link.target = "_blank";
+        link.rel = "noopener";
+        mediaLinks.appendChild(link);
+      };
+
+      const findHeadingForTable = (doc, table) => {
+        const headings = Array.from(doc.querySelectorAll("h2"));
+        let current = "影视资源表";
+        for (const heading of headings) {
+          if (heading.compareDocumentPosition(table) & Node.DOCUMENT_POSITION_FOLLOWING) {
+            current = heading.textContent.trim();
+          } else if (heading.compareDocumentPosition(table) & Node.DOCUMENT_POSITION_PRECEDING) {
+            current = heading.textContent.trim();
+            break;
+          }
+        }
+        return current || "影视资源表";
+      };
+
+      fetch("./影视资源.html")
+        .then((response) => response.text())
+        .then((html) => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, "text/html");
+
+          const serialLink = doc.querySelector('a[href*="feishu"][href*="shrcnc4l"]');
+          const finishedLink = doc.querySelector('a[href*="feishu"][href*="shrcnfn"]');
+          addLinkButton("连载中", normalizeLink(serialLink?.getAttribute("href")));
+          addLinkButton("已完结", normalizeLink(finishedLink?.getAttribute("href")));
+
+          const tables = Array.from(doc.querySelectorAll("table")).filter((table) => {
+            const text = table.textContent || "";
+            return text.includes("剧名") && (text.includes("夸克") || text.includes("百度"));
+          });
+
+          if (!tables.length) {
+            mediaTables.textContent = "未找到影视表格，请确认影视资源.html已上传。";
+            return;
+          }
+
+          mediaTables.innerHTML = "";
+          tables.forEach((table) => {
+            const wrapper = document.createElement("div");
+            wrapper.className = "media-table";
+            const title = document.createElement("h3");
+            title.textContent = findHeadingForTable(doc, table);
+            wrapper.appendChild(title);
+
+            const cloned = table.cloneNode(true);
+            cloned.querySelectorAll("a").forEach((link) => {
+              link.setAttribute("target", "_blank");
+              link.setAttribute("rel", "noopener");
+            });
+            wrapper.appendChild(cloned);
+            mediaTables.appendChild(wrapper);
+          });
+        })
+        .catch(() => {
+          mediaTables.textContent = "读取失败，请确认影视资源.html与本页在同一目录。";
+        });
+
+      tryAutoPlay();
+    </script>
+  </body>
+</html>
