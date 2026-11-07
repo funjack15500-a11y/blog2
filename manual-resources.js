@@ -1,4 +1,7 @@
 window.MANUAL_RESOURCES=[
+  {title:"诛仙",version:"用户补充",category:"动漫 · 夸克网盘",updated:"置顶资源",priority:100,quark:"https://pan.quark.cn/s/8602c2ec28ce",baidu:""},
+  {title:"诛仙",version:"用户补充",category:"动漫 · 百度网盘",updated:"置顶资源",priority:100,quark:"",baidu:"https://pan.baidu.com/share/init?surl=gwf-omoSGqHRv-u2a7l2NQ&pwd=hsmf"},
+  {title:"神墓",version:"用户补充",category:"动漫 · 百度网盘",updated:"置顶资源",priority:100,quark:"",baidu:"https://pan.baidu.com/s/1mbJn9v8aDCExKhuXDa6GzA?pwd=6666"},
   {title:"八仙",version:"用户补充",category:"影视资源 · 夸克网盘",updated:"置顶资源",priority:100,quark:"https://pan.quark.cn/s/16f0712a2629",baidu:""},
   {title:"师兄啊师兄",version:"用户补充",category:"动漫 · 百度网盘",updated:"置顶资源",priority:100,quark:"",baidu:"https://pan.baidu.com/share/init?surl=s0I4SvRwMGtOf_f-iFxDMA&pwd=8888"},
   {title:"师兄啊师兄",version:"用户补充",category:"动漫 · 夸克网盘",updated:"置顶资源",priority:100,quark:"https://pan.quark.cn/s/78d79c4a14d7",baidu:""},
