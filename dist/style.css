@@ -19,3 +19,12 @@ body{overflow-x:hidden}main,footer{position:relative;z-index:2}#starfield{positi
 @media(max-width:800px){.search-hero.search-hero-clean{min-height:330px;padding:60px 18px}.search-hero-clean .film-orbit{margin-bottom:36px}}
 .resource-actions{justify-content:flex-end}#resourceTable th:last-child{text-align:right}#resourceTable td:first-child{width:auto}#resourceTable td:last-child{width:260px}
 @media(max-width:800px){#resourceTable td:last-child{width:100%}}
+
+/* 近 7 天更新的条目：置顶 + NEW 标记 */
+.new-badge{display:inline-flex;align-items:center;gap:4px;margin-left:8px;padding:2px 7px 2px 6px;border-radius:6px;background:linear-gradient(135deg,#ff5c5c,#ff9138);color:#fff;font:700 9px/1.4 "DM Sans",sans-serif;letter-spacing:.1em;text-transform:uppercase;vertical-align:2px;box-shadow:0 4px 12px rgba(255,92,92,.28)}
+.new-badge:before{content:"";width:4px;height:4px;border-radius:50%;background:#fff;animation:newPulse 1.3s ease-in-out infinite}
+@keyframes newPulse{50%{opacity:.3}}
+@media(prefers-reduced-motion:reduce){.new-badge:before{animation:none!important}}
+.title-cell{display:inline-flex;align-items:baseline;gap:0;max-width:100%}
+.title-cell strong{display:inline}
+@media(max-width:800px){.title-cell{justify-content:flex-end;text-align:right;flex:1;min-width:0;margin-left:12px}}
