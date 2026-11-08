@@ -13,37 +13,38 @@ set "LOG=%ROOT%\logs\update.log"
 
 if not exist "%ROOT%\logs" mkdir "%ROOT%\logs"
 cd /d "%ROOT%"
+for /f "delims=" %%i in ('powershell -NoProfile -Command "Get-Date -Format s"') do set "TS=%%i"
 echo.>> "%LOG%"
-echo [%date% %time%] run start>> "%LOG%"
+echo [%TS%] run start>> "%LOG%"
 
 node tools\sync-linuxdo.mjs>> "%LOG%" 2>&1
 if errorlevel 1 (
-  echo [%date% %time%] sync failed, aggregator offline? skip git>> "%LOG%"
+  echo [%TS%] sync failed, aggregator offline? skip git>> "%LOG%"
   exit /b 0
 )
 
 git add -A>> "%LOG%" 2>&1
 git diff --cached --quiet
 if not errorlevel 1 (
-  echo [%date% %time%] no change>> "%LOG%"
+  echo [%TS%] no change>> "%LOG%"
   exit /b 0
 )
 
 git commit -m "auto: sync netdisk resources">> "%LOG%" 2>&1
 if errorlevel 1 (
-  echo [%date% %time%] commit failed>> "%LOG%"
+  echo [%TS%] commit failed>> "%LOG%"
   exit /b 0
 )
 
 if "%AUTO_PUSH%"=="0" (
-  echo [%date% %time%] committed, push skipped by AUTO_PUSH=0>> "%LOG%"
+  echo [%TS%] committed, push skipped by AUTO_PUSH=0>> "%LOG%"
   exit /b 0
 )
 
 git push origin main>> "%LOG%" 2>&1
 if errorlevel 1 (
-  echo [%date% %time%] push failed (check git credential / remote)>> "%LOG%"
+  echo [%TS%] push failed (check git credential / remote)>> "%LOG%"
 ) else (
-  echo [%date% %time%] pushed>> "%LOG%"
+  echo [%TS%] pushed>> "%LOG%"
 )
 exit /b 0
