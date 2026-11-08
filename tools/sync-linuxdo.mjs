@@ -34,6 +34,9 @@ function tidyTitle(raw) {
   title = title.replace(/^(教程|课程|资源|影视|动漫)\s*/, "").trim();
   title = title.replace(/\s*\d+月\d+日(更新)?\s*$/, "").trim();
   title = title.replace(/[（(【「『]+[^）)】」』]*$/, "").trim();
+  // 帖子标题常带 emoji 和一大段推广语，只留前面的片名
+  title = title.replace(/^\p{Extended_Pictographic}\s*/u, "").trim();
+  if (title.length > 18 && title.includes("，")) title = title.split("，")[0].trim();
   return title || String(raw).trim();
 }
 
@@ -77,9 +80,14 @@ const push = (row) => {
   rows.push(row);
 };
 
+// 只收影视/剧集类；课程、付费文章、资料包一律进不来
+const KEEP_TYPES = new Set(["影视"]);
+
 // 先保留上几次同步进来的条目，避免它们退出 7 天窗口后从库里消失
 for (const row of existingRows()) {
   const title = tidyTitle(row.title);
+  const type = String(row.category || "").includes("影视") ? "影视" : pickType(row.title);
+  if (!KEEP_TYPES.has(type)) continue;
   const key = `${title}|${row.quark}|${row.baidu}`;
   if (seen.has(key)) continue;
   seen.add(key);
@@ -87,7 +95,8 @@ for (const row of existingRows()) {
 }
 
 let added = 0;
-const skipped = { 迅雷: 0, 无夸克百度: 0 };
+const skipped = { 迅雷: 0, 无夸克百度: 0, 非影视: 0 };
+const skippedList = [];
 
 for (const item of netdisk) {
   const providers = item.share.filter((s) => PROVIDER_FIELD[s.provider]);
@@ -99,6 +108,11 @@ for (const item of netdisk) {
   const title = tidyTitle(item.title);
   const version = pickVersion(item.title);
   const type = pickType(`${item.title} ${item.drive || ""}`);
+  if (!KEEP_TYPES.has(type)) {
+    skipped.非影视++;
+    if (process.env.SYNC_DEBUG) skippedList.push(`[${type}] ${item.title}`);
+    continue;
+  }
   const category = `网盘资源 · ${type}`;
   const updated = String(item.publishedAt || "").slice(0, 10) || "—";
 
@@ -142,8 +156,9 @@ const keys = new Set();
 for (const row of renamed) {
   const key = `${row.title}|${row.quark}|${row.baidu}`;
   if (keys.has(key)) continue;
+  const category = String(row.category || "").includes("网盘资源") ? row.category : `网盘资源 · ${pickType(row.title)}`;
   keys.add(key);
-  unique.push({ ...row, category: `网盘资源 · ${pickType(row.title)}` });
+  unique.push({ ...row, category });
 }
 
 const sorted = unique
@@ -160,6 +175,7 @@ console.log(
       聚合站网盘条数: netdisk.length,
       本次新增行: added,
       跳过: skipped,
+      被过滤样本: process.env.SYNC_DEBUG ? skippedList : undefined,
       文件总行: sorted.length,
       bytes: Buffer.byteLength(text, "utf8"),
     },

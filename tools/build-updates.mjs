@@ -99,6 +99,8 @@ if (baseGroups.size) {
   }
   for (const [key, prev] of baseGroups) {
     if (nowGroups.has(key)) continue;
+    // 课程/资料包/付费文章本就不在小站范围内，下架它们不用对外播报
+    if (/网盘资源 · (课程|资料包|其他)/.test(String(prev.category || ""))) continue;
     changes.push({
       title: prev.title,
       version: prev.version.join(" / ") || "—",
@@ -120,6 +122,8 @@ if (fs.existsSync(historyFile)) {
     history = [];
   }
 }
+// 历史里已经记下的「非影视下架」一并清掉，保持更新流只讲影视
+history = history.filter((item) => !(item.change === "removed" && /网盘资源 · (课程|资料包|其他)/.test(String(item.category || ""))));
 
 const byKey = new Map(history.map((item) => [item.key, item]));
 for (const change of changes) {

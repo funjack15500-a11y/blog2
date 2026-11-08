@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-11-08T04:11:14.678Z",
+  "generatedAt": "2026-11-08T04:21:38.904Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
-  "total": 708,
-  "changed": 100,
-  "added": 40,
+  "total": 678,
+  "changed": 67,
+  "added": 6,
   "updated": 58,
-  "removed": 2,
+  "removed": 3,
   "items": [
     {
       "title": "玫瑰战争(2026)",
-      "version": "更新6集 / 更6集",
-      "category": "网盘资源 · 其他",
+      "version": "更6集 / 更新6集",
+      "category": "网盘资源 · 影视",
       "quark": [
-        "https://pan.quark.cn/s/2f7985862dc2",
-        "https://pan.quark.cn/s/cbf82c4f4bc1"
+        "https://pan.quark.cn/s/cbf82c4f4bc1",
+        "https://pan.quark.cn/s/2f7985862dc2"
       ],
       "baidu": [
-        "https://pan.baidu.com/s/1SbL3Rk6P43MNubdFJ57GqQ?pwd=6666",
-        "https://pan.baidu.com/s/1UjtRVkNq99JQHLiDfM5ixg?pwd=8888"
+        "https://pan.baidu.com/s/1UjtRVkNq99JQHLiDfM5ixg?pwd=8888",
+        "https://pan.baidu.com/s/1SbL3Rk6P43MNubdFJ57GqQ?pwd=6666"
       ],
       "change": "updated",
-      "prevVersion": "更新6集",
-      "at": "2026-11-08T04:11:14.293Z"
+      "prevVersion": "更新6集 / 更6集",
+      "at": "2026-11-08T04:21:38.904Z"
     },
     {
-      "title": "恒洋：财富思维认知破局",
+      "title": "📺 AI漫剧持械入宋（S1-10），无统子、战争场面很精致，超好看的漫剧",
       "version": "—",
-      "category": "网盘资源 · 其他",
+      "category": "网盘资源 · 影视",
       "quark": [
-        "https://pan.quark.cn/s/9a5d271c91da"
+        "https://pan.quark.cn/s/e5e20e531284"
+      ],
+      "baidu": [],
+      "change": "removed",
+      "at": "2026-11-08T04:21:38.904Z"
+    },
+    {
+      "title": "AI漫剧持械入宋（S1-10）",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/e5e20e531284"
       ],
       "baidu": [],
       "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "周思成雅思2999元",
-      "version": "—",
-      "category": "网盘资源 · 其他",
-      "quark": [
-        "https://pan.quark.cn/s/92ed752449a1"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
+      "at": "2026-11-08T04:21:38.904Z"
     },
     {
       "title": "黑帮领地 第二季 (2026)",
@@ -55,149 +55,6 @@
       ],
       "baidu": [
         "https://pan.baidu.com/s/18bi9TGmBFs1dSKZ7hzNEZA?pwd=vcku"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "极客时间 专栏课-Jim Blandy-Rust 程序设计（第 2 版）",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [
-        "https://pan.quark.cn/s/0e6be9b7d846"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "doctorX：白色黑手党时代",
-      "version": "—",
-      "category": "网盘资源 · 其他",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1eP0KlAr0WaZ-ZGPXhfDE9A?pwd=pibb"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "惜搏《抖音团购商家实战课程》",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1skJ74AYBka1bBys5F67W1A?pwd=6h6y"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "谎言",
-      "version": "—",
-      "category": "网盘资源 · 其他",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1a2UCX8WheMLeHWerLbmnkA?pwd=122u"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "抖音某博主《AI历史推演教学》",
-      "version": "—",
-      "category": "网盘资源 · 其他",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1oHXKQlZoX9ih0ZecRYfqfg?pwd=q5fn"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "从0到1 现场实操视频创作全过程",
-      "version": "—",
-      "category": "网盘资源 · 其他",
-      "quark": [
-        "https://pan.quark.cn/s/abaa8835ca6c"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "现代C++探险之旅 ：趣解C++入门到征服C++11、C++17、C++20",
-      "version": "—",
-      "category": "网盘资源 · 其他",
-      "quark": [
-        "https://pan.quark.cn/s/278871738857"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "📺 AI漫剧持械入宋（S1-10），无统子、战争场面很精致，超好看的漫剧",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/e5e20e531284"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "2026高中网课合集",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [
-        "https://pan.quark.cn/s/0bb32830cfcc"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "坏男孩学院 1980挽回爱情：",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [
-        "https://pan.quark.cn/s/079848bf7e14"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "极客时间 视频课-高磊-给程序员的写作课（完结）",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [
-        "https://pan.quark.cn/s/ea7af05d2b70"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "帮你快速找到影视剪辑入门",
-      "version": "—",
-      "category": "网盘资源 · 其他",
-      "quark": [
-        "https://pan.quark.cn/s/f491820e2c11"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:14.293Z"
-    },
-    {
-      "title": "宁小宥《AI怀旧治愈动漫课程》更新",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1gzq0Xi1CCawJti-DBG7PCA?pwd=k2dk"
       ],
       "change": "added",
       "at": "2026-11-08T04:11:14.293Z"
@@ -896,17 +753,6 @@
       "at": "2026-11-08T04:11:13.926Z"
     },
     {
-      "title": "人民日报高质量书单100本 合集 2G",
-      "version": "—",
-      "category": "网盘资源 · 资料包",
-      "quark": [
-        "https://pan.quark.cn/s/df2ca99d6fa4"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
       "title": "斗破苍穹 年番4 (2025)",
       "version": "更至218集",
       "category": "网盘资源 · 影视",
@@ -915,52 +761,6 @@
       ],
       "baidu": [
         "https://pan.baidu.com/s/1CYttp_06lZBhzV5RmnuInA?pwd=9wry"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "全网付费文章 大佬观点学习 最新研报 星球资讯",
-      "version": "—",
-      "category": "网盘资源 · 其他",
-      "quark": [
-        "https://pan.quark.cn/s/42ea525c7f1e"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1AVWYzF7oAN4eb-QovsyqUA?pwd=85q9"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "冯唐成事心法",
-      "version": "—",
-      "category": "网盘资源 · 其他",
-      "quark": [
-        "https://pan.quark.cn/s/bbbae8690e5c"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "文老师软考高级系统架构师备考资料- 录播+直播",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [
-        "https://pan.quark.cn/s/cbad9650c8dc"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "蜜蜜《知识IP变现课》",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1wn5aVUZIPlYH_VX3e1dCbQ?pwd=m59g"
       ],
       "change": "added",
       "at": "2026-11-08T04:11:13.926Z"
@@ -975,98 +775,6 @@
       "baidu": [
         "https://pan.baidu.com/s/1bzqTernRMXAfY0qCbPjTJg?pwd=tu5n"
       ],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "PS零基础 飞跃班",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [
-        "https://pan.quark.cn/s/4a0287233aab"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "分道扬镳(2026)",
-      "version": "全6集",
-      "category": "网盘资源 · 其他",
-      "quark": [
-        "https://pan.quark.cn/s/cfac51564d0a"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1LMdkCiqGeBvGmS-L6PeziA?pwd=6666"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "极客时间-视频课- 黄佳-AI应用实战课",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [
-        "https://pan.quark.cn/s/b70b65a9d536"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "白羊《全维度AI短视频全能实战课》",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1HqOS8T4f7r1LY8Hua5n9uw?pwd=anfe"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "大理寺日志3 (2026)",
-      "version": "更至10集",
-      "category": "网盘资源 · 其他",
-      "quark": [
-        "https://pan.quark.cn/s/fd25ab42e8c9"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1hQ0oz2giy2ll-6gGk6zB9Q?pwd=qt8x"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "全套茶艺课程：零基础也能学会，轻松掌握茶艺精髓",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [
-        "https://pan.quark.cn/s/af80ce7ca254"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "蜜蜜《小红书IP打造实战课》",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1W_HmxjKIDInW_J1kPkhzKw?pwd=9r56"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "大数据全栈工程师",
-      "version": "—",
-      "category": "网盘资源 · 其他",
-      "quark": [
-        "https://pan.quark.cn/s/3f9e715a3bd6"
-      ],
-      "baidu": [],
       "change": "added",
       "at": "2026-11-08T04:11:13.926Z"
     },
@@ -1086,17 +794,6 @@
       "at": "2026-11-08T04:11:13.926Z"
     },
     {
-      "title": "商业级MMORPG大型网游 Unity全栈开发 - 带源码",
-      "version": "—",
-      "category": "网盘资源 · 资料包",
-      "quark": [
-        "https://pan.quark.cn/s/232beafb8b85"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
       "title": "光阴之外 年番1 (2026)",
       "version": "更至47集",
       "category": "网盘资源 · 影视",
@@ -1106,74 +803,6 @@
       "baidu": [
         "https://pan.baidu.com/s/11W42lDUbf7yJeNiQ14x5WQ?pwd=26ei"
       ],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "卧虎《AI电商内容创作全能实战课》",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/14URoGTcrjDB10Ha-g1D0kA?pwd=szzu"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "日本动漫歌曲无损合集",
-      "version": "—",
-      "category": "网盘资源 · 资料包",
-      "quark": [
-        "https://pan.quark.cn/s/57ede0fd651a"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "316 个养老躺平 城市信息",
-      "version": "—",
-      "category": "网盘资源 · 资料包",
-      "quark": [
-        "https://pan.quark.cn/s/8dc9f7e4a9ee"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "择日飞升 (2026)",
-      "version": "更至19集",
-      "category": "网盘资源 · 其他",
-      "quark": [
-        "https://pan.quark.cn/s/79662c5c29c2"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1zFMezFchoVXcwJo_EFHGuQ?pwd=u7iw"
-      ],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "慕课网-深入浅出Java并发多线程：核心基础+内存模型＋死锁— —从用法到原理，面试必考",
-      "version": "—",
-      "category": "网盘资源 · 课程",
-      "quark": [
-        "https://pan.quark.cn/s/0cca83acd64d"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T04:11:13.926Z"
-    },
-    {
-      "title": "H5小游戏源码JS开发网页小游戏",
-      "version": "—",
-      "category": "网盘资源 · 资料包",
-      "quark": [
-        "https://pan.quark.cn/s/4e37f3797a93"
-      ],
-      "baidu": [],
       "change": "added",
       "at": "2026-11-08T04:11:13.926Z"
     },
