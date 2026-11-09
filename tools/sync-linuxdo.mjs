@@ -37,12 +37,26 @@ function tidyTitle(raw) {
   // 帖子标题常带 emoji 和一大段推广语，只留前面的片名
   title = title.replace(/^\p{Extended_Pictographic}\s*/u, "").trim();
   if (title.length > 18 && title.includes("，")) title = title.split("，")[0].trim();
+  // 尾部噪音：集数进度、画质、字幕、双更之类的卖点
+  title = title
+    .replace(/[（(]?(4K|8K|高清|超清|中文字幕|双语字幕|双更臻享|臻享|全集|完结)[）)]?/gi, " ")
+    .replace(/(更新|更至|更新至|最新|已更新|已更|全量?)\s*第?\s*\d+\s*集/g, " ")
+    .replace(/(更新|更至|更新至|最新|已更新|已更)?\s*第?\s*\d+\s*集\s*$/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  // 多剧合帖（「A & B 双更」）只留第一部，B 通常自己也有独立帖
+  title = title.split(/\s*[&＆]\s*/)[0].trim();
+  title = title.replace(/[，,、]{2,}/g, "，").replace(/^[，,、\s]+|[，,、\s]+$/g, "").trim();
   return title || String(raw).trim();
 }
 
 function pickType(text) {
   if (/课|教程|训练营|实战|慕课|极客时间|学院|班|考证|备考|网校/.test(text)) return "课程";
-  if (/源码|资料|合集|书单|信息|文档|模板|素材|字体|壁纸/.test(text)) return "资料包";
+  // 英语分级动画、启蒙动画这类是学习资料，不是剧集
+  if (/学英语|英语启蒙|分级动画|启蒙动画|英语学习/.test(text)) return "课程";
+  // 「某某讲某某 166 集」这种是讲座课，不是剧
+  if (/讲/.test(text) && /\d+\s*集/.test(text)) return "课程";
+  if (/源码|资料|合集|书单|信息|文档|模板|素材|字体|壁纸|付费文章|文集|研报|资讯/.test(text)) return "资料包";
   if (/剧|番|季|集|电影|剧场版|综艺|纪录片|动漫|动画/.test(text)) return "影视";
   return "其他";
 }
@@ -87,7 +101,12 @@ const KEEP_TYPES = new Set(["影视"]);
 for (const row of existingRows()) {
   const title = tidyTitle(row.title);
   const type = String(row.category || "").includes("影视") ? "影视" : pickType(row.title);
-  if (!KEEP_TYPES.has(type)) continue;
+  // 老条目也重新判一次：以前漏进来的课程 / 付费文章 / 资料包要清出去
+  const recheck = pickType(`${row.title} ${row.version || ""}`);
+  if (!KEEP_TYPES.has(type) || /^(课程|资料包)$/.test(recheck)) continue;
+  if (title.length <= 10 && /主演|领衔|出品|执导/.test(title)) continue;
+  // 「某某讲某某」是讲座课，不是剧集
+  if (/讲/.test(title) && !/[剧番季]/.test(title)) continue;
   const key = `${title}|${row.quark}|${row.baidu}`;
   if (seen.has(key)) continue;
   seen.add(key);
@@ -95,7 +114,7 @@ for (const row of existingRows()) {
 }
 
 let added = 0;
-const skipped = { 迅雷: 0, 无夸克百度: 0, 非影视: 0 };
+const skipped = { 迅雷: 0, 无夸克百度: 0, 非影视: 0, 无片名: 0 };
 const skippedList = [];
 
 for (const item of netdisk) {
@@ -106,6 +125,11 @@ for (const item of netdisk) {
     continue;
   }
   const title = tidyTitle(item.title);
+  // 「赵本山特别主演 4K高清」这类只有主演没有片名的推广帖，指认不出是哪部剧
+  if (title.length <= 10 && /主演|领衔|出品|执导/.test(title) && !/《/.test(item.title)) {
+    skipped.无片名++;
+    continue;
+  }
   const version = pickVersion(item.title);
   const type = pickType(`${item.title} ${item.drive || ""}`);
   if (!KEEP_TYPES.has(type)) {
