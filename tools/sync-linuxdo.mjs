@@ -193,6 +193,16 @@ const text = `window.AUTO_RESOURCES=${JSON.stringify(sorted)};\n`;
 fs.writeFileSync(autoFile, text);
 fs.writeFileSync(path.join(root, "dist", "auto-resources.js"), text);
 
+// 浏览器会把 auto-resources.js 缓存住，内容更新了页面还显示旧条目。
+// 每次同步在 script 地址上加一个版本参数，强制重新拉取。
+const stamp = new Date().toISOString().replace(/[-:TZ.]/g, "").slice(0, 14);
+for (const htmlPath of [path.join(root, "index.html"), path.join(root, "dist", "index.html")]) {
+  if (!fs.existsSync(htmlPath)) continue;
+  const html = fs.readFileSync(htmlPath, "utf8");
+  const patched = html.replace(/(\.\/auto-resources\.js)(\?v=[^"]*)?/g, `$1?v=${stamp}`);
+  if (patched !== html) fs.writeFileSync(htmlPath, patched);
+}
+
 console.log(
   JSON.stringify(
     {
