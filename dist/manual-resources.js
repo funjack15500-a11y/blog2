@@ -15,5 +15,9 @@ window.MANUAL_RESOURCES=[
   {title:"吞噬星空",version:"用户补充",category:"动漫 · 夸克网盘",updated:"置顶资源",priority:100,quark:"https://pan.quark.cn/s/381991aedaf6",baidu:""},
   {title:"凡人修仙传",version:"纯净收藏版 · 199集 · 4K/1080P",category:"动漫 · 夸克网盘",updated:"用户补充",quark:"https://pan.quark.cn/s/6b40127c535e",baidu:""},
   {title:"凡人修仙传",version:"2020 · 4K高码率 · 199集",category:"动漫 · 百度网盘",updated:"用户补充",quark:"",baidu:"https://pan.baidu.com/s/1Yqg-pixCp69msd-rAlKj4w?pwd=oioi"},
-  {title:"凡人修仙传",version:"年番4 · 199集 · 4K高码",category:"动漫 · 夸克网盘",updated:"用户补充",quark:"https://pan.quark.cn/s/89b6097c4f29",baidu:""}
+  {title:"凡人修仙传",version:"年番4 · 199集 · 4K高码",category:"动漫 · 夸克网盘",updated:"用户补充",quark:"https://pan.quark.cn/s/89b6097c4f29",baidu:""},
+  {title:"我们这一家",version:"投递资源",category:"动漫 · 夸克网盘",updated:"2026-11-09",priority:100,quark:"https://pan.quark.cn/s/3a2362fc8a20",baidu:""},
+  {title:"我们这一家",version:"投递资源",category:"动漫 · 夸克网盘",updated:"2026-11-09",priority:100,quark:"https://pan.quark.cn/s/19afc53c2716#/list/share",baidu:""},
+  {title:"我们这一家",version:"投递资源",category:"动漫 · 百度网盘",updated:"2026-11-09",priority:100,quark:"",baidu:"https://pan.baidu.com/s/1BiscmMNnrEkJZ7UXHXvb3A?pwd=6666"},
+  {title:"我们这一家",version:"投递资源",category:"动漫 · 百度网盘",updated:"2026-11-09",priority:100,quark:"",baidu:"https://pan.baidu.com/s/1H7xg4Wb3lP6Jayz5yXdbRA?pwd=6666"},
 ];
