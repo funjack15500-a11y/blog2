@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T12:05:27.998Z",
+  "generatedAt": "2026-11-10T12:20:04.194Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
   "total": 704,
-  "changed": 84,
-  "added": 21,
+  "changed": 82,
+  "added": 19,
   "updated": 59,
   "removed": 4,
   "items": [
@@ -18,17 +18,6 @@
       "baidu": [
         "https://pan.baidu.com/s/1v-bUVS__qdg8EDInq7r1eA?pwd=6666"
       ],
-      "change": "added",
-      "at": "2026-11-08T12:00:05.144Z"
-    },
-    {
-      "title": "最适合学英语的278部英语分级动画",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/45144832bcb9"
-      ],
-      "baidu": [],
       "change": "added",
       "at": "2026-11-08T12:00:05.144Z"
     },
@@ -120,17 +109,6 @@
       "baidu": [
         "https://pan.baidu.com/s/1x_NA84qMtq5_DW5E6-BRwA?pwd=6666"
       ],
-      "change": "added",
-      "at": "2026-11-08T12:00:05.144Z"
-    },
-    {
-      "title": "全网付费文章 - 大佬文集圈 学习先锋 精选研报",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/92a4167c357a"
-      ],
-      "baidu": [],
       "change": "added",
       "at": "2026-11-08T12:00:05.144Z"
     },

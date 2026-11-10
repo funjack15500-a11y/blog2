@@ -122,8 +122,13 @@ if (fs.existsSync(historyFile)) {
     history = [];
   }
 }
-// 历史里已经记下的「非影视下架」一并清掉，保持更新流只讲影视
-history = history.filter((item) => !(item.change === "removed" && /网盘资源 · (课程|资料包|其他)/.test(String(item.category || ""))));
+// 历史里的「课程 / 资料包 / 付费文章」一律清掉，更新流只讲影视，
+// 新增、变更、下架都不例外（这类条目本就不该进小站）。
+history = history.filter((item) => !/网盘资源 · (课程|资料包|其他)/.test(String(item.category || "")));
+// 早期抓进来时被误标成「影视」的课程（英语分级动画、付费文集等），按标题再筛一遍
+const NON_FILM_TITLE =
+  /付费文章|文集|研报|资料包|英语分级|分级动画|启蒙动画|实战课|视频课|训练营|教程|慕课|考证|教学/;
+history = history.filter((item) => !NON_FILM_TITLE.test(String(item.title || "")));
 
 const byKey = new Map(history.map((item) => [item.key, item]));
 for (const change of changes) {
