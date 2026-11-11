@@ -1,25 +1,55 @@
 {
-  "generatedAt": "2026-11-10T12:20:04.194Z",
+  "generatedAt": "2026-11-11T12:12:06.805Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
-  "total": 704,
-  "changed": 82,
-  "added": 19,
+  "total": 714,
+  "changed": 77,
+  "added": 14,
   "updated": 59,
   "removed": 4,
   "items": [
     {
-      "title": "异能研究所 第二季 4K SDR 内封简英双语字幕",
-      "version": "更新1集",
+      "title": "指环王：力量之戒 第三季",
+      "version": "更4集",
       "category": "网盘资源 · 影视",
       "quark": [
-        "https://pan.quark.cn/s/28ae17fecd9b"
+        "https://pan.quark.cn/s/5ee94f414008"
       ],
       "baidu": [
-        "https://pan.baidu.com/s/1v-bUVS__qdg8EDInq7r1eA?pwd=6666"
+        "https://pan.baidu.com/s/1ds2M4Ex2KUqR5JMvIU2SnQ?pwd=8888"
       ],
       "change": "added",
-      "at": "2026-11-08T12:00:05.144Z"
+      "at": "2026-11-11T12:12:06.805Z"
+    },
+    {
+      "title": "遮天 年番3",
+      "version": "— / 更新19集 / 更189集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/e2ac14f20ce8",
+        "https://pan.quark.cn/s/d1d7c551244f",
+        "https://pan.quark.cn/s/48c3e1f14a15"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1ASmbo08y-gqf0bwtQ8geww?pwd=8888",
+        "https://pan.baidu.com/s/1hFCCfQen9fZf_r_Q3c259A?pwd=74fj",
+        "https://pan.baidu.com/s/1H5afbLazwWgVJl52WlRbzg?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-11T12:12:06.805Z"
+    },
+    {
+      "title": "魔鬼的计谋：死亡重启(2026)",
+      "version": "更新5集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/d53cfb34edee"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1Gl1y8kcweuH88Eh5pWON-Q?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-11T12:12:06.805Z"
     },
     {
       "title": "doctorX：白色黑手党时代",
@@ -34,30 +64,6 @@
       ],
       "change": "updated",
       "prevVersion": "—",
-      "at": "2026-11-08T12:00:05.144Z"
-    },
-    {
-      "title": "赵本山特别主演 4K高清 更新第17集",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/587a5880d921"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T12:00:05.144Z"
-    },
-    {
-      "title": "财神窦占龙(2026) 最新15集",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/38bef3cc41b0"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1n_iPff78RTL958YhT48AYA?pwd=6666"
-      ],
-      "change": "added",
       "at": "2026-11-08T12:00:05.144Z"
     },
     {
@@ -83,68 +89,6 @@
       ],
       "baidu": [
         "https://pan.baidu.com/s/1B35QF0L3hedwCNKrNUsxuA?pwd=8888"
-      ],
-      "change": "added",
-      "at": "2026-11-08T12:00:05.144Z"
-    },
-    {
-      "title": "牧神记，更新至 108 集，高清",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/46c40b17532b"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T12:00:05.144Z"
-    },
-    {
-      "title": "牧神记 更新第108集",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/40b749a8bf05",
-        "https://pan.quark.cn/s/d2d46136ffa2"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1x_NA84qMtq5_DW5E6-BRwA?pwd=6666"
-      ],
-      "change": "added",
-      "at": "2026-11-08T12:00:05.144Z"
-    },
-    {
-      "title": "牧神记 & 财神窦占龙（2026） 双更臻享",
-      "version": "更15集",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/7ff432cb0745"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1r0Gqkp3idedm6xOxPaP2SQ?pwd=ha53"
-      ],
-      "change": "added",
-      "at": "2026-11-08T12:00:05.144Z"
-    },
-    {
-      "title": "蔡于阳讲观掌知心166集",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/a1a79a3e0c76"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-08T12:00:05.144Z"
-    },
-    {
-      "title": "恋爱博士(2026) 中文字幕",
-      "version": "更10集",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/e74ee995b199"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1PE1vKm5xkcjnn7QrCYvZgw?pwd=6666"
       ],
       "change": "added",
       "at": "2026-11-08T12:00:05.144Z"

@@ -40,6 +40,7 @@ function tidyTitle(raw) {
   // 尾部噪音：集数进度、画质、字幕、双更之类的卖点
   title = title
     .replace(/[（(]?(4K|8K|高清|超清|中文字幕|双语字幕|双更臻享|臻享|臻彩|高码率|杜比|HDR|60帧|全集|完结)[）)]?/gi, " ")
+    .replace(/[（(]\s*(更新|更至|更新至|最新)?\s*第?\s*\d+\s*集\s*[）)]/g, " ")
     .replace(/(更新|更至|更新至|最新|已更新|已更|全量?)\s*第?\s*\d+\s*集/g, " ")
     .replace(/(更新|更至|更新至|最新|已更新|已更)?\s*第?\s*\d+\s*集\s*$/g, " ")
     .replace(/\s+/g, " ")
@@ -106,6 +107,8 @@ for (const row of existingRows()) {
   const recheck = pickType(`${row.title} ${row.version || ""}`);
   if (!KEEP_TYPES.has(type) || /^(课程|资料包)$/.test(recheck)) continue;
   if (title.length <= 10 && /主演|领衔|出品|执导/.test(title)) continue;
+  // 「｜动漫｜」这类只有装饰符号的老条目，也要清出去
+  if (/^[\p{P}\p{S}\s]*(动漫|动画|影视|剧集|资源|网盘)?[\p{P}\p{S}\s]*$/u.test(title)) continue;
   // 「某某讲某某」是讲座课，不是剧集
   if (/讲/.test(title) && !/[剧番季]/.test(title)) continue;
   const key = `${title}|${row.quark}|${row.baidu}`;
@@ -129,6 +132,12 @@ for (const item of netdisk) {
   // 「赵本山特别主演 4K高清」这类只有主演没有片名的推广帖，指认不出是哪部剧
   if (title.length <= 10 && /主演|领衔|出品|执导/.test(title) && !/《/.test(item.title)) {
     skipped.无片名++;
+    continue;
+  }
+  // 「｜动漫｜」这种只剩装饰符号+类目词的标题，不是片名
+  if (/^[\p{P}\p{S}\s]*(动漫|动画|影视|剧集|资源|网盘)?[\p{P}\p{S}\s]*$/u.test(title)) {
+    skipped.无片名++;
+    if (process.env.SYNC_DEBUG) skippedList.push(`[无片名] ${item.title}`);
     continue;
   }
   const version = pickVersion(item.title);

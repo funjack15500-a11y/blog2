@@ -24,8 +24,29 @@ const now = Date.now();
 const argIndex = process.argv.indexOf("--base");
 const BASE_REF = argIndex > -1 && process.argv[argIndex + 1] ? process.argv[argIndex + 1] : "HEAD";
 
+// node 进程的 PATH 里可能没有 git（本机装在 D:\Program Files\git\cmd 且未加入 PATH），
+// 直接 execFileSync("git") 会失败，showFile 又把这个失败吞成空串，
+// 结果 baseRows 为空、thisRun 永远是 0，更新流再也记不进新条目。
+function resolveGit() {
+  const candidates = [
+    process.env.GIT_EXE,
+    "D:\\Program Files\\git\\cmd\\git.exe",
+    "C:\\Program Files\\Git\\cmd\\git.exe",
+    "C:\\Program Files (x86)\\Git\\cmd\\git.exe",
+  ].filter(Boolean);
+  for (const candidate of candidates) {
+    try {
+      if (fs.existsSync(candidate)) return candidate;
+    } catch {
+      /* 忽略 */
+    }
+  }
+  return "git";
+}
+const GIT = resolveGit();
+
 function git(args) {
-  return execFileSync("git", ["-C", root, ...args], {
+  return execFileSync(GIT, ["-C", root, ...args], {
     encoding: "utf8",
     maxBuffer: 32 * 1024 * 1024,
     stdio: ["ignore", "pipe", "ignore"]
@@ -129,13 +150,21 @@ history = history.filter((item) => !/网盘资源 · (课程|资料包|其他)/.
 const NON_FILM_TITLE =
   /付费文章|文集|研报|资料包|英语分级|分级动画|启蒙动画|实战课|视频课|训练营|教程|慕课|考证|教学/;
 history = history.filter((item) => !NON_FILM_TITLE.test(String(item.title || "")));
+// 「｜动漫｜」那种只剩装饰符号、没有片名的条目也不进更新流
+history = history.filter(
+  (item) => !/^[\p{P}\p{S}\s]*(动漫|动画|影视|剧集|资源|网盘)?[\p{P}\p{S}\s]*$/u.test(String(item.title || ""))
+);
 
 const byKey = new Map(history.map((item) => [item.key, item]));
 for (const change of changes) {
   byKey.set(change.key, { ...change, at: new Date(now).toISOString() });
 }
 
+// 「新增/变更」的记录必须对应当前库里还存在的标题；标题被归并或清掉后，
+// 旧记录会变成幽灵条目（如被并入「遮天 年番3」的「遮天（第189集）」），一并丢掉。
+const validKeys = new Set(nowGroups.keys());
 const kept = [...byKey.values()]
+  .filter((item) => item.change === "removed" || !item.key || validKeys.has(item.key))
   .filter((item) => now - Date.parse(item.at || 0) <= WINDOW_MS)
   .sort((a, b) => String(b.at).localeCompare(String(a.at)));
 
