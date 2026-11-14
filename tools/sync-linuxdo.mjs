@@ -19,11 +19,25 @@ function pickVersion(text) {
   return match ? match[0].replace(/\s+/g, "") : "—";
 }
 
+// 帖子标题里的「卖点词」：画质、字幕、集数进度、附带季、发布标注。
+// 用词元（空格/括号切开后逐段）过滤，比一串正则替换干净得多——先前把「杜比视界」拆掉只留「视界」就是正则替换的坑。
+const NOISE_TOKEN =
+  /^(4k|8k|1080p|720p|2160p|hdr|dv|nf|web|web-dl|sdr|uhd|imax|bluray|蓝光|高清|超清|国语|粤语|国粤|中字|中文字幕|国语中字|中英|中英字幕|简繁|简中|简繁英|官中|双语|字幕|内封|内封简繁|内封官中|内封中英|内封简繁英|更|更新|更至|更新至|最新|已更新|全集|完结|完结季|纯净收藏版|臻享|臻彩|高码|高码率|60帧|双更|双更臻享|每周五|正式版|加码|重映版|版|修复|易和谐|nsfw|胆小勿看|首更|首播|加长版|加长)$/i;
+
+const CN_NUM = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10, 十一: 11, 十二: 12 };
+
+// 方括号里如果是画质/集数/附带季这类噪音就整段丢掉，如果是片名（【奥德赛】4K）就把括号本身去掉、留住内容
+const BRACKET_NOISE = /^(4k|8k|1080p|720p|web|hdr|dv|nf|sdr|uhd|imax|更|更新|中字|中文字幕|双语|内封|简中|简繁|官中|全集|完结|附|含|修复|纯净|收藏|nsfw|易和谐|胆小|首更|首播|加长)\b/i;
+
+function unwrapBrackets(input) {
+  return input
+    .replace(/【([^】]*)】/g, (match, inner) => (BRACKET_NOISE.test(String(inner).trim()) ? " " : ` ${inner} `))
+    .replace(/\[([^\]]*)\]/g, (match, inner) => (BRACKET_NOISE.test(String(inner).trim()) ? " " : ` ${inner} `));
+}
+
 function tidyTitle(raw) {
   let title = String(raw || "").replace(/[\u200e\u200f\u00a0]/g, " ").trim();
-  title = title
-    .replace(/【[^】]*】/g, " ")
-    .replace(/\[[^\]]*\]/g, " ")
+  title = unwrapBrackets(title)
     .replace(/【/g, " ")
     .replace(/】/g, " ")
     .replace(/「/g, " ")
@@ -31,24 +45,76 @@ function tidyTitle(raw) {
     .replace(/[更全]\s*[至新]?\s*\d+\s*集/g, " ")
     .replace(/\s+/g, " ")
     .trim();
-  title = title.replace(/^(教程|课程|资源|影视|动漫)\s*/, "").trim();
+  title = title.replace(/^(教程|课程|资源|影视|动漫|韩剧|韩影|美剧|英剧|日剧|日影|国剧|台剧|港剧|漫剧|短剧|综艺|纪录片)\s*/, "").trim();
   title = title.replace(/\s*\d+月\d+日(更新)?\s*$/, "").trim();
   title = title.replace(/[（(【「『]+[^）)】」』]*$/, "").trim();
   // 帖子标题常带 emoji 和一大段推广语，只留前面的片名
   title = title.replace(/^\p{Extended_Pictographic}\s*/u, "").trim();
   if (title.length > 18 && title.includes("，")) title = title.split("，")[0].trim();
-  // 尾部噪音：集数进度、画质、字幕、双更之类的卖点
+
+  // 先把括号统一成空格，再逐个词元过滤噪音
+  title = title.replace(/[（）()【】\[\]「」『』]/g, " ").replace(/[｜|]/g, " ");
+  // 集数进度（「第179集」「更至103集」「全8集」「11.07期」）先整段去掉，免得粘在片名后面
   title = title
-    .replace(/[（(]?(4K|8K|高清|超清|中文字幕|双语字幕|双更臻享|臻享|臻彩|高码率|杜比|HDR|60帧|全集|完结)[）)]?/gi, " ")
-    .replace(/[（(]\s*(更新|更至|更新至|最新)?\s*第?\s*\d+\s*集\s*[）)]/g, " ")
-    .replace(/(更新|更至|更新至|最新|已更新|已更|全量?)\s*第?\s*\d+\s*集/g, " ")
-    .replace(/(更新|更至|更新至|最新|已更新|已更)?\s*第?\s*\d+\s*集\s*$/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-  // 多剧合帖（「A & B 双更」）只留第一部，B 通常自己也有独立帖
-  title = title.split(/\s*[&＆]\s*/)[0].trim();
+    .replace(/\p{Extended_Pictographic}/gu, " ")
+    .replace(/附[前面]*[0-9一二三四五六七八九十]+季[全集]*/g, " ")
+    .replace(/(?:至|到|更至|更新至|已更新|已更|全|共)?\s*第?\s*\d+\s*集/g, " ")
+    .replace(/\d+\.\d+\s*期/g, " ")
+    .replace(/(臻享|臻彩|加码|加长|重映|正式|纯净收藏|收藏|修复)版/g, " ")
+    .replace(/[，,\s]*[至到]\s*$/g, " ");
+  const tokens = title
+    .split(/\s+/)
+    .map((t) => t.replace(/^[，,、：:·\-—]+|[，,、：:·\-—]+$/g, "").trim())
+    .filter(
+      (t) =>
+        t &&
+        !NOISE_TOKEN.test(t) &&
+        !/^(杜比|内封|简繁|简中|官中|国粤|英日|中英|双语|高清|超清|Netflix|网飞|泰语|韩语|日语|英语|原声|4k|8k|1080p|720p)/i.test(t) &&
+        !/^(动漫|动画|剧集|新剧|影片)$/.test(t) &&
+        !/^\p{Script=Hangul}+$/u.test(t) &&
+        !/(字幕|音轨|双语|中字)$/.test(t) &&
+        !/^附[前面]*[0-9一二三四五六七八九十]+季/.test(t) &&
+        !/^含[0-9\-—~]/.test(t) &&
+        !/版$/.test(t)
+    );
+  title = tokens.join(" ").replace(/\s+/g, " ").trim();
+  // 词元过滤后仍可能留下「更至」「最新」这类残缺进度词
+  title = title.replace(/(更新|更至|更新至|最新|已更新|已更)\s*/g, " ").replace(/\s+/g, " ").trim();
+  title = title.replace(/[，,、：:·\-—]+$/g, "").trim();
+  // 「更」「总」这类被切剩的单字也去掉
+  title = title.replace(/\s+(更|总|第|集|至|到)$/g, "").replace(/^(更|总|第|集|至|到)\s+/g, "").trim();
+  // 「漫剧 漫剧XXX」这种同词重复的前缀压一次
+  title = title.replace(/^(漫剧|短剧|剧集)\s+\1/, "$1");
+
+  // 多剧合帖（「A & B 双更」）只留第一部；但第一部太短（「谷雨&玫瑰战争」）就保留完整，
+  // 免得只剩个认不出来的半截名字
+  const parts = title.split(/\s*[&＆]\s*/);
+  title = parts.length > 1 && parts[0].trim().length >= 4 ? parts[0].trim() : parts.join("，");
   title = title.replace(/[，,、]{2,}/g, "，").replace(/^[，,、\s]+|[，,、\s]+$/g, "").trim();
+  // 清完只剩画质词/单字的，不是片名
+  if (title.replace(/[^\p{L}\p{N}]/gu, "").length < 2) return "";
   return title || String(raw).trim();
+}
+
+// 「沧元图3 (2026)」「沧元图 第三季【更至103集】」「沧元图第 第103集」本质是同一部剧，
+// 用系列名做归并键：去年份、去集数、去画质尾巴，把「第X季」统一成数字季。
+function seriesKey(title) {
+  let key = String(title || "")
+    .replace(/（\d{4}）|\(\d{4}\)|\d{4}/g, "")
+    .replace(/第(十一|十二|一|二|三|四|五|六|七|八|九|十)季/g, (m, cn) => `${CN_NUM[cn]}季`)
+    .replace(/最终季|完结季|新季|全集|完结/g, "")
+    .replace(/[（(【\[].*?[）)】\]]/g, "")
+    .replace(/年番\s*([0-9一二三四五六七八九十]+)/g, "")
+    .replace(/第?\d+\s*集/g, "")
+    .replace(/Ⅱ|II/g, "2")
+    .replace(/附[前面]*[0-9一二三四五六七八九十]+季.*$/g, "")
+    .replace(/(1080p|720p|2160p|4k|8k|hdr|dv|nf|web|sdr|uhd|imax|中字|中英|双语|字幕|内封|简繁|简中|官中|国语|粤语|臻彩|高码率|高码|纯净收藏版)/gi, "")
+    .replace(/[^\p{L}\p{N}]/gu, "")
+    .toLowerCase();
+  key = key.replace(/季$/g, "");
+  // 「沧元图3」「牧神记 年番2」这类季数尾巴并到主名下，同一部剧只留一张卡
+  key = key.replace(/(?<=\p{Script=Han})\d+$/gu, "");
+  return key;
 }
 
 function pickType(text) {
@@ -87,6 +153,26 @@ const netdisk = (state.items || []).filter(
   (item) => item.category === "网盘资源" && Array.isArray(item.share) && item.share.length
 );
 
+// Jina 阅读器开始要 API Key（直连 r.jina.ai 401、直连 linux.do 403），聚合站抓不到 linux.do 时，
+// 用浏览器侧抓下来的帖子快照补位：data/ldo-extra.json 由人工/浏览器流程生成，24 小时内有效。
+const extraFile = process.env.LDO_EXTRA || path.join("E:\\codex_out\\linux", "data", "ldo-extra.json");
+let extraCount = 0;
+try {
+  if (fs.existsSync(extraFile)) {
+    const stamp = fs.statSync(extraFile).mtimeMs;
+    if (Date.now() - stamp < 24 * 60 * 60 * 1000) {
+      const extra = JSON.parse(fs.readFileSync(extraFile, "utf8"));
+      for (const item of extra) {
+        if (!Array.isArray(item.share) || !item.share.length) continue;
+        netdisk.push(item);
+        extraCount++;
+      }
+    }
+  }
+} catch (error) {
+  console.warn("读取 ldo-extra.json 失败：", error.message);
+}
+
 const rows = [];
 const seen = new Set();
 const push = (row) => {
@@ -102,6 +188,7 @@ const KEEP_TYPES = new Set(["影视"]);
 // 先保留上几次同步进来的条目，避免它们退出 7 天窗口后从库里消失
 for (const row of existingRows()) {
   const title = tidyTitle(row.title);
+  if (!title) continue;
   const type = String(row.category || "").includes("影视") ? "影视" : pickType(row.title);
   // 老条目也重新判一次：以前漏进来的课程 / 付费文章 / 资料包要清出去
   const recheck = pickType(`${row.title} ${row.version || ""}`);
@@ -129,6 +216,12 @@ for (const item of netdisk) {
     continue;
   }
   const title = tidyTitle(item.title);
+  // 清完只剩画质词的（「iMAX UHD」「NF DV」）不算片名
+  if (!title) {
+    skipped.无片名++;
+    if (process.env.SYNC_DEBUG) skippedList.push(`[空标题] ${item.title}`);
+    continue;
+  }
   // 「赵本山特别主演 4K高清」这类只有主演没有片名的推广帖，指认不出是哪部剧
   if (title.length <= 10 && /主演|领衔|出品|执导/.test(title) && !/《/.test(item.title)) {
     skipped.无片名++;
@@ -141,7 +234,11 @@ for (const item of netdisk) {
     continue;
   }
   const version = pickVersion(item.title);
-  const type = pickType(`${item.title} ${item.drive || ""}`);
+  let type = pickType(`${item.title} ${item.drive || ""}`);
+  // 论坛帖子自带标签，电影名（如「奥德赛」「心乡迷踪」）标题里没有剧/集字样会被判成「其他」，
+  // 带「影视」标签的按标签补回影视；但训练营/教程这类即使挂了影视标签也还是课程。
+  const tagFilm = Array.isArray(item.tags) && item.tags.includes("影视");
+  if (tagFilm && type === "其他") type = "影视";
   if (!KEEP_TYPES.has(type)) {
     skipped.非影视++;
     if (process.env.SYNC_DEBUG) skippedList.push(`[${type}] ${item.title}`);
@@ -163,25 +260,23 @@ for (const item of netdisk) {
 }
 
 // 同一个资源常被不同人用不同标题重复发（「现在就出发 第四季」vs「现在就出发 第四季 现在就出发4(2026)11.07期」），
-// 把长标题归一成最短的那个标题，前端按标题归并时链接自然合并到一条上。
-const norm = (value) => String(value).replace(/\s+/g, "").toLowerCase();
-const canonical = [];
-for (const row of [...rows].sort((a, b) => a.title.length - b.title.length)) {
-  const n = norm(row.title);
-  if (n.length < 4) continue;
-  if (canonical.find((c) => norm(c.title).includes(n))) continue;
-  canonical.push(row);
+// 按「系列名」归并，取最短的那个标题做展示名，前端再把链接合并成一条。
+const bestBySeries = new Map();
+for (const row of rows) {
+  const key = seriesKey(row.title).replace(/第$/g, "");
+  if (!key) continue;
+  const prev = bestBySeries.get(key);
+  const better =
+    !prev ||
+    row.title.length < prev.title.length ||
+    (row.title.length === prev.title.length && String(row.updated || "") > String(prev.updated || ""));
+  if (better) bestBySeries.set(key, row);
 }
 function canonTitle(title) {
-  const n = norm(title);
-  let best = null;
-  for (const c of canonical) {
-    const cn = norm(c.title);
-    if (cn.length >= 4 && (cn.includes(n) || n.includes(cn)) || cn === n) {
-      if (!best || cn.length < norm(best).length) best = c.title;
-    }
-  }
-  return best || title;
+  const key = seriesKey(title).replace(/第$/g, "");
+  const best = bestBySeries.get(key);
+  if (!best) return title;
+  return best.title.length <= title.length ? best.title : title;
 }
 
 const renamed = rows.map((row) => ({ ...row, title: canonTitle(row.title) }));
