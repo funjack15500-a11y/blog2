@@ -322,7 +322,7 @@ const stamp = new Date().toISOString().replace(/[-:TZ.]/g, "").slice(0, 14);
 for (const htmlPath of [path.join(root, "index.html"), path.join(root, "dist", "index.html")]) {
   if (!fs.existsSync(htmlPath)) continue;
   const html = fs.readFileSync(htmlPath, "utf8");
-  const patched = html.replace(/(\.\/(?:auto|manual)-resources\.js)(\?v=[^"]*)?/g, `$1?v=${stamp}`);
+  const patched = html.replace(/(\.\/(?:auto|manual)-resources\.js|\.\/(?:script|style)\.(?:js|css))(\?v=[^"]*)?/g, `$1?v=${stamp}`);
   if (patched !== html) fs.writeFileSync(htmlPath, patched);
 }
 
