@@ -28,3 +28,7 @@ body{overflow-x:hidden}main,footer{position:relative;z-index:2}#starfield{positi
 .title-cell{display:inline-flex;align-items:baseline;gap:0;max-width:100%}
 .title-cell strong{display:inline}
 @media(max-width:800px){.title-cell{justify-content:flex-end;text-align:right;flex:1;min-width:0;margin-left:12px}}
+
+#resourceTable th:nth-child(2),#resourceTable td:nth-child(2){width:104px}
+.updated-cell{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:800px){#resourceTable th:nth-child(2),#resourceTable td:nth-child(2){width:100%}}
