@@ -102,7 +102,7 @@ function seriesKey(title) {
   let key = String(title || "")
     .replace(/（\d{4}）|\(\d{4}\)|\d{4}/g, "")
     .replace(/第(十一|十二|一|二|三|四|五|六|七|八|九|十)季/g, (m, cn) => `${CN_NUM[cn]}季`)
-    .replace(/最终季|完结季|新季|全集|完结/g, "")
+    .replace(/最终季|完结季|新季|全集|完结|收藏版|纯净收藏版|收藏/g, "")
     .replace(/[（(【\[].*?[）)】\]]/g, "")
     .replace(/年番\s*([0-9一二三四五六七八九十]+)/g, "")
     .replace(/第?\d+\s*集/g, "")
@@ -152,6 +152,21 @@ const state = await loadState();
 const netdisk = (state.items || []).filter(
   (item) => item.category === "网盘资源" && Array.isArray(item.share) && item.share.length
 );
+
+// 聚合站 /api/state 不带 tags，所以「影视」这个论坛标签靠 ldo-film-ids.json 传过来
+// （由分类页快照里的 topic 标签生成），用于把「奥德赛」「心乡迷踪」这类纯电影名认成影视。
+const filmIdsFile = path.join("E:\\codex_out\\linux", "data", "ldo-film-ids.json");
+let filmIds = new Set();
+try {
+  if (fs.existsSync(filmIdsFile)) {
+    const doc = JSON.parse(fs.readFileSync(filmIdsFile, "utf8"));
+    if (Date.now() - fs.statSync(filmIdsFile).mtimeMs < 48 * 60 * 60 * 1000) {
+      filmIds = new Set((doc.ids || []).map(String));
+    }
+  }
+} catch (error) {
+  console.warn("读取 ldo-film-ids.json 失败：", error.message);
+}
 
 // Jina 阅读器开始要 API Key（直连 r.jina.ai 401、直连 linux.do 403），聚合站抓不到 linux.do 时，
 // 用浏览器侧抓下来的帖子快照补位：data/ldo-extra.json 由人工/浏览器流程生成，24 小时内有效。
@@ -238,7 +253,10 @@ for (const item of netdisk) {
   // 论坛帖子自带标签，电影名（如「奥德赛」「心乡迷踪」）标题里没有剧/集字样会被判成「其他」，
   // 带「影视」标签的按标签补回影视；但训练营/教程这类即使挂了影视标签也还是课程。
   const tagFilm = Array.isArray(item.tags) && item.tags.includes("影视");
-  if (tagFilm && type === "其他") type = "影视";
+  const idFilm =
+    filmIds.size > 0 && /(?:t\/topic\/|t\/)(\d+)/.test(String(item.link || '')) &&
+    filmIds.has(((String(item.link || '').match(/(?:t\/topic\/|t\/)(\d+)/) || [])[1] || ''));
+  if ((tagFilm || idFilm) && type === "其他") type = "影视";
   if (!KEEP_TYPES.has(type)) {
     skipped.非影视++;
     if (process.env.SYNC_DEBUG) skippedList.push(`[${type}] ${item.title}`);
