@@ -10,7 +10,7 @@ import { execFileSync } from "node:child_process";
 const root = path.resolve(import.meta.dirname, "..");
 const autoFile = path.join(root, "auto-resources.js");
 const endpoint = process.env.AGGREGATOR_URL || "http://127.0.0.1:3000/api/state";
-const MAX_KEEP = 240;
+const MAX_KEEP = 420;
 
 const PROVIDER_FIELD = { 夸克网盘: "quark", 百度网盘: "baidu" };
 
@@ -108,7 +108,7 @@ function seriesKey(title) {
     .replace(/第?\d+\s*集/g, "")
     .replace(/Ⅱ|II/g, "2")
     .replace(/附[前面]*[0-9一二三四五六七八九十]+季.*$/g, "")
-    .replace(/(1080p|720p|2160p|4k|8k|hdr|dv|nf|web|sdr|uhd|imax|中字|中英|双语|字幕|内封|简繁|简中|官中|国语|粤语|臻彩|高码率|高码|纯净收藏版)/gi, "")
+    .replace(/(1080p|720p|2160p|4k|8k|hdr|dv|nf|web|sdr|uhd|hq|imax|中字|中英|双语|字幕|内封|简繁|简中|官中|国语|粤语|臻彩|高码率|高码|纯净收藏版)/gi, "")
     .replace(/[^\p{L}\p{N}]/gu, "")
     .toLowerCase();
   key = key.replace(/季$/g, "");
@@ -126,7 +126,7 @@ function pickType(text) {
   if (/讲/.test(text) && /\d+\s*集/.test(text)) return "课程";
   // 「资源荟萃」不止有剧，还混着课程、电子书、软件包。这些词的标题一律按资料包挡掉，
   // 否则「《运筹术》：…」「1524个无损音效包」会被当成电影塞进列表。
-  if (/资源汇总|资源包|音效|素材|字体|壁纸|模板|工具包|工具箱|软件|插件|教程|训练营|集训营|陪跑|变现|获客|跑通|方法论|心法|秘籍|法则|原理|策略|读本|讲义|手册|图鉴|词典|字典|宝典|大全|电子书|PDF|套装|全[两三四五六七八九十]+册|合集|书单|资料|笔记|案例|报告|研报|清单|试卷|题库|课件|PPT|Vlog|拍摄|剪辑/.test(text)) return "资料包";
+  if (/资源汇总|资源包|音效|素材|字体|壁纸|模板|工具包|工具箱|软件|插件|教程|训练营|集训营|陪跑|变现|获客|跑通|方法论|心法|秘籍|法则|原理|策略|读本|讲义|手册|图鉴|词典|字典|宝典|大全|电子书|PDF|套装|全[两三四五六七八九十]+册|合集|书单|资料|笔记|案例|报告|研报|清单|试卷|题库|课件|PPT|Vlog|拍摄|剪辑|小学|初中|高中|年级|课本|教材|一本通|剧本|全赛道/.test(text)) return "资料包";
   if (/剧|番|季|集|电影|剧场版|综艺|纪录片|动漫|动画/.test(text)) return "影视";
   return "其他";
 }

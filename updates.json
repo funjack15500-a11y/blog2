@@ -1,13 +1,141 @@
 {
-  "generatedAt": "2026-11-18T12:00:04.002Z",
+  "generatedAt": "2026-11-18T12:03:18.264Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
-  "total": 873,
-  "changed": 107,
-  "added": 17,
-  "updated": 12,
+  "total": 888,
+  "changed": 113,
+  "added": 22,
+  "updated": 13,
   "removed": 78,
   "items": [
+    {
+      "title": "复仇者联盟4：终局之战",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/5d9bb9619c52",
+        "https://pan.quark.cn/s/1c7109e9ca54",
+        "https://pan.quark.cn/s/a75184fe4013"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1FREqOHQZM16yPnbpW0aCTw?pwd=jwc7",
+        "https://pan.baidu.com/s/14K1fUQ1fEyKAO5ijKvYFZw?pwd=6666"
+      ],
+      "change": "updated",
+      "prevVersion": "—",
+      "at": "2026-11-18T12:03:18.264Z"
+    },
+    {
+      "title": "遮天",
+      "version": "145 / 138 / — / 更新19集 / 更189集",
+      "category": "国漫（周一到周日） / 网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/99758a147076",
+        "https://pan.quark.cn/s/26907cae946c",
+        "https://pan.quark.cn/s/e2ac14f20ce8",
+        "https://pan.quark.cn/s/d1d7c551244f",
+        "https://pan.quark.cn/s/48c3e1f14a15",
+        "https://pan.quark.cn/s/7f1e8055d047"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1qBuaCWEwYmfCM44og1OJ4Q?pwd=wqmn",
+        "https://pan.baidu.com/s/1ASmbo08y-gqf0bwtQ8geww?pwd=8888",
+        "https://pan.baidu.com/s/1hFCCfQen9fZf_r_Q3c259A?pwd=74fj",
+        "https://pan.baidu.com/s/1H5afbLazwWgVJl52WlRbzg?pwd=6666",
+        "https://pan.baidu.com/s/1IvPNL1Tre-ayOWiaREJOKA?pwd=8888"
+      ],
+      "change": "updated",
+      "prevVersion": "145 / 138 / — / 更新19集 / 更189集",
+      "at": "2026-11-18T12:03:18.264Z"
+    },
+    {
+      "title": "大夏守墓人 2026",
+      "version": "更17集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/11965ab0fa85"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1TRGyCJDNwFW7Z0cC44SsLg?pwd=41kj"
+      ],
+      "change": "added",
+      "at": "2026-11-18T12:03:18.264Z"
+    },
+    {
+      "title": "一斩苍穹 2026 HQ",
+      "version": "更18集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/32aa679709d5",
+        "https://pan.quark.cn/s/b8de1bdd240a"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1q1XnP9-VP10If6IJit2UQQ?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-18T12:03:18.264Z"
+    },
+    {
+      "title": "儿童纪录片分享",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1AF6hcMJz2FhmdTFEzWASSA?pwd=sao7"
+      ],
+      "change": "added",
+      "at": "2026-11-18T12:03:18.264Z"
+    },
+    {
+      "title": "可以爱吗 Pls.Love รักได้ไหม 2026",
+      "version": "全8集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/954e85a54d71"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1PfLn5E5WupgHZoI473h6uA?pwd=qwey"
+      ],
+      "change": "added",
+      "at": "2026-11-18T12:03:18.264Z"
+    },
+    {
+      "title": "一念永恒",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/c350a6267582"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1die_srVOTkbYSEf1NLxyyw?pwd=8888"
+      ],
+      "change": "added",
+      "at": "2026-11-18T12:03:18.264Z"
+    },
+    {
+      "title": "今天是太阳雨 2026",
+      "version": "全24集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/de34588d7e11"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1cPQ5lhPHxVnxsORT3Ap8nw?pwd=kv4m"
+      ],
+      "change": "added",
+      "at": "2026-11-18T12:03:18.264Z"
+    },
+    {
+      "title": "小学语文动画，适合给孩子磨耳朵",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1IT7mq9EAgzb-Fix4tzDXMA?pwd=22kb"
+      ],
+      "change": "removed",
+      "at": "2026-11-18T12:03:18.264Z"
+    },
     {
       "title": "1112影视资源汇总",
       "version": "—",
@@ -530,20 +658,6 @@
       "at": "2026-11-18T11:55:00.895Z"
     },
     {
-      "title": "复仇者联盟4：终局之战",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/1c7109e9ca54",
-        "https://pan.quark.cn/s/a75184fe4013"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/14K1fUQ1fEyKAO5ijKvYFZw?pwd=6666"
-      ],
-      "change": "removed",
-      "at": "2026-11-18T11:55:00.895Z"
-    },
-    {
       "title": "斗罗大陆",
       "version": "— / 更179集",
       "category": "网盘资源 · 影视",
@@ -581,18 +695,6 @@
       ],
       "baidu": [],
       "change": "removed",
-      "at": "2026-11-18T11:55:00.895Z"
-    },
-    {
-      "title": "遮天",
-      "version": "145 / 138",
-      "category": "国漫（周一到周日）",
-      "quark": [
-        "https://pan.quark.cn/s/99758a147076"
-      ],
-      "baidu": [],
-      "change": "updated",
-      "prevVersion": "145 / 138 / — / 更新19集 / 更189集",
       "at": "2026-11-18T11:55:00.895Z"
     },
     {
@@ -1053,17 +1155,6 @@
         "https://pan.quark.cn/s/4d060ee4f930"
       ],
       "baidu": [],
-      "change": "added",
-      "at": "2026-11-14T12:00:05.038Z"
-    },
-    {
-      "title": "小学语文动画，适合给孩子磨耳朵",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1IT7mq9EAgzb-Fix4tzDXMA?pwd=22kb"
-      ],
       "change": "added",
       "at": "2026-11-14T12:00:05.038Z"
     },
