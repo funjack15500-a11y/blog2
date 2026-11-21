@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-21T03:25:55.223Z",
+  "generatedAt": "2026-11-21T04:00:04.805Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
   "total": 942,
-  "changed": 127,
+  "changed": 126,
   "added": 41,
   "updated": 18,
-  "removed": 68,
+  "removed": 67,
   "items": [
     {
       "title": "电影 四渡 2026 刘烨 DV流媒体",
@@ -1681,19 +1681,6 @@
       ],
       "change": "added",
       "at": "2026-11-14T12:00:05.038Z"
-    },
-    {
-      "title": "再婚皇后 2026",
-      "version": "更至6集",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/e97d1e9e6f2c"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/19IUYBEpheLfTd5rt5Orvgg?pwd=8888"
-      ],
-      "change": "removed",
-      "at": "2026-11-14T03:31:58.727Z"
     }
   ]
 }
