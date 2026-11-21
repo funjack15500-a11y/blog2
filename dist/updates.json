@@ -1,13 +1,24 @@
 {
-  "generatedAt": "2026-11-21T03:19:41.534Z",
+  "generatedAt": "2026-11-21T03:25:17.790Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
-  "total": 947,
-  "changed": 125,
-  "added": 42,
+  "total": 948,
+  "changed": 126,
+  "added": 43,
   "updated": 19,
   "removed": 64,
   "items": [
+    {
+      "title": "1120短剧",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1qms3WB71TY3yI7FhwSL63w?pwd=411S"
+      ],
+      "change": "added",
+      "at": "2026-11-21T03:25:17.790Z"
+    },
     {
       "title": "沧元图",
       "version": "66 / — / 更至104集 / 更新103集 / 更至103集",
@@ -30,7 +41,7 @@
       ],
       "change": "updated",
       "prevVersion": "66 / — / 更新103集 / 更至103集",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "镶金理想 2026",
@@ -48,7 +59,7 @@
       ],
       "change": "updated",
       "prevVersion": "全8集",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "大主宰",
@@ -66,7 +77,7 @@
       ],
       "change": "updated",
       "prevVersion": "— / 更至47集",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "斗罗大陆Ⅱ：绝世唐门",
@@ -81,7 +92,7 @@
         "https://pan.baidu.com/s/12hDErCHYPE-G02-9p2W0Tg?pwd=51s4"
       ],
       "change": "removed",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "JOJO的奇妙冒险 飙马野郎 2026",
@@ -96,7 +107,7 @@
       ],
       "change": "updated",
       "prevVersion": "更至9集",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "好搭档2 中 附第1季",
@@ -109,7 +120,7 @@
         "https://pan.baidu.com/s/1EjahIlTMFSH4taOcniYjdQ?pwd=6666"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "斗罗大陆2绝世唐门",
@@ -129,7 +140,7 @@
         "https://pan.baidu.com/s/12hDErCHYPE-G02-9p2W0Tg?pwd=51s4"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "多喜一家人 2026",
@@ -142,7 +153,7 @@
         "https://pan.baidu.com/s/1gWXsXDKqeETZPRRtCHP-Wg?pwd=8888"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "罪蓝之路",
@@ -158,7 +169,7 @@
         "https://pan.baidu.com/s/1IvRTXlqtQe69uO2qcIKY1g?pwd=v7wa"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "嗜血法医：杀魔复生 第二季",
@@ -169,7 +180,7 @@
         "https://pan.baidu.com/s/14jdQ2lfeGeDTU0SsloIK1A?pwd=rnrn"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "电影 四渡",
@@ -180,7 +191,7 @@
         "https://pan.baidu.com/s/1-IxE8aRIrmtO_yAl78Cftw?pwd=y6vM"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "AI漫剧 持械入宋 S1-S11",
@@ -191,7 +202,7 @@
       ],
       "baidu": [],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "电影 四渡 2026 历史 战争 刘烨",
@@ -204,7 +215,7 @@
         "https://pan.baidu.com/s/18Mjx2Vf-QINqYaFW-xZgwA?pwd=c1i2"
       ],
       "change": "removed",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "电影 四渡 2026 刘烨",
@@ -217,7 +228,7 @@
         "https://pan.baidu.com/s/18Mjx2Vf-QINqYaFW-xZgwA?pwd=c1i2"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "《入地眼》",
@@ -228,7 +239,7 @@
       ],
       "baidu": [],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "好女儿 2026 全 惊悚/犯罪",
@@ -241,7 +252,7 @@
         "https://pan.baidu.com/s/1oOG-aGGyoCnQ8f6rklSxhA?pwd=5jmt"
       ],
       "change": "removed",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "韩/日剧 绑架游戏",
@@ -252,7 +263,7 @@
         "https://pan.baidu.com/s/13Ly6pND0Jz7-OVeOlwaw2g?pwd=k449"
       ],
       "change": "removed",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "凡人修仙传",
@@ -281,7 +292,7 @@
       ],
       "change": "updated",
       "prevVersion": "176 / 171 / 172 / — / 更200集 / 更新200集 / 更至199集",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "凡人修仙传 百度/夸克网盘",
@@ -292,7 +303,7 @@
       ],
       "baidu": [],
       "change": "removed",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "街头霸王 2026 剧情/动作",
@@ -305,7 +316,7 @@
         "https://pan.baidu.com/s/1tHhYdfWNMNsJUQZjCd0qdg?pwd=r9ee"
       ],
       "change": "removed",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "凡人修仙传年番4 动作/动画/奇幻",
@@ -316,7 +327,7 @@
       ],
       "baidu": [],
       "change": "removed",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "蓝色星球 第三季/蓝色星球3 2026",
@@ -329,7 +340,7 @@
         "https://pan.baidu.com/s/1Sq9B5i1kpEORLg-oF2fUzw?pwd=6666"
       ],
       "change": "removed",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "电影 四渡 2026 刘烨 DV流媒体",
@@ -342,7 +353,7 @@
         "https://pan.baidu.com/s/18Mjx2Vf-QINqYaFW-xZgwA?pwd=c1i2"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "好女儿 2026 全",
@@ -355,7 +366,7 @@
         "https://pan.baidu.com/s/1oOG-aGGyoCnQ8f6rklSxhA?pwd=5jmt"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "韩 日剧 绑架游戏",
@@ -366,7 +377,7 @@
         "https://pan.baidu.com/s/13Ly6pND0Jz7-OVeOlwaw2g?pwd=k449"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "蓝色星球 第三季 蓝色星球3 2026",
@@ -379,7 +390,7 @@
         "https://pan.baidu.com/s/1Sq9B5i1kpEORLg-oF2fUzw?pwd=6666"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "凡人修仙传 百度 夸克网盘",
@@ -390,7 +401,7 @@
       ],
       "baidu": [],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "街头霸王 2026",
@@ -403,7 +414,7 @@
         "https://pan.baidu.com/s/1tHhYdfWNMNsJUQZjCd0qdg?pwd=r9ee"
       ],
       "change": "added",
-      "at": "2026-11-21T03:19:41.534Z"
+      "at": "2026-11-21T03:19:54.365Z"
     },
     {
       "title": "黑帮领地第二季",
