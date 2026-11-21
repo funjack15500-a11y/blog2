@@ -1,13 +1,48 @@
 {
-  "generatedAt": "2026-11-21T03:25:17.790Z",
+  "generatedAt": "2026-11-21T03:25:55.223Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
-  "total": 948,
-  "changed": 126,
-  "added": 43,
-  "updated": 19,
-  "removed": 64,
+  "total": 942,
+  "changed": 127,
+  "added": 41,
+  "updated": 18,
+  "removed": 68,
   "items": [
+    {
+      "title": "电影 四渡 2026 刘烨 DV流媒体",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/08582766fc59"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/18Mjx2Vf-QINqYaFW-xZgwA?pwd=c1i2"
+      ],
+      "change": "removed",
+      "at": "2026-11-21T03:25:55.223Z"
+    },
+    {
+      "title": "鬼灭 蓝光原盘REMUX",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/0e7120c38f62"
+      ],
+      "baidu": [],
+      "change": "removed",
+      "at": "2026-11-21T03:25:55.223Z"
+    },
+    {
+      "title": "鬼灭",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/0e7120c38f62"
+      ],
+      "baidu": [],
+      "change": "added",
+      "at": "2026-11-21T03:25:55.223Z"
+    },
     {
       "title": "1120短剧",
       "version": "—",
@@ -16,8 +51,21 @@
       "baidu": [
         "https://pan.baidu.com/s/1qms3WB71TY3yI7FhwSL63w?pwd=411S"
       ],
-      "change": "added",
-      "at": "2026-11-21T03:25:17.790Z"
+      "change": "removed",
+      "at": "2026-11-21T03:25:55.223Z"
+    },
+    {
+      "title": "1113短剧",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1r9vuV7_5sVNPLsLug360sg?pwd=8JPN",
+        "https://pan.baidu.com/s/167g_SZwjp-XmmR7bO-CSPw?pwd=n85N",
+        "https://pan.baidu.com/s/1p2K5wJtD7WDyh3zEF2o8Kg?pwd=4G7A"
+      ],
+      "change": "removed",
+      "at": "2026-11-21T03:25:55.223Z"
     },
     {
       "title": "沧元图",
@@ -343,19 +391,6 @@
       "at": "2026-11-21T03:19:54.365Z"
     },
     {
-      "title": "电影 四渡 2026 刘烨 DV流媒体",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/08582766fc59"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/18Mjx2Vf-QINqYaFW-xZgwA?pwd=c1i2"
-      ],
-      "change": "added",
-      "at": "2026-11-21T03:19:54.365Z"
-    },
-    {
       "title": "好女儿 2026 全",
       "version": "—",
       "category": "网盘资源 · 影视",
@@ -564,17 +599,6 @@
       "baidu": [
         "https://pan.baidu.com/s/1ALsBDbUE_YKobY6qaAFoeg?pwd=6666"
       ],
-      "change": "added",
-      "at": "2026-11-20T10:33:33.441Z"
-    },
-    {
-      "title": "鬼灭 蓝光原盘REMUX",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/0e7120c38f62"
-      ],
-      "baidu": [],
       "change": "added",
       "at": "2026-11-20T10:33:33.441Z"
     },
@@ -948,18 +972,6 @@
       ],
       "change": "updated",
       "prevVersion": "— / 更新10集",
-      "at": "2026-11-18T11:55:00.895Z"
-    },
-    {
-      "title": "1113短剧",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1r9vuV7_5sVNPLsLug360sg?pwd=8JPN"
-      ],
-      "change": "updated",
-      "prevVersion": "—",
       "at": "2026-11-18T11:55:00.895Z"
     },
     {

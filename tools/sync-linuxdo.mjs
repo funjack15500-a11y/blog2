@@ -63,6 +63,7 @@ function tidyTitle(raw) {
     .replace(/(?:至|到|更至|更新至|已更新|已更|全|共)?\s*第?\s*\d+\s*集/g, " ")
     .replace(/\d+\.\d+\s*期/g, " ")
     .replace(/(臻享|臻彩|加码|加长|重映|正式|纯净收藏|收藏|修复)版/g, " ")
+    .replace(/DV流媒体|流媒体|蓝光原盘REMUX|REMUX/gi, " ")
     .replace(/[，,\s]*[至到]\s*$/g, " ");
   const tokens = title
     .split(/\s+/)
@@ -218,6 +219,7 @@ for (const row of existingRows()) {
   if (/^[\p{P}\p{S}\s]*(动漫|动画|影视|剧集|资源|网盘)?[\p{P}\p{S}\s]*$/u.test(title)) continue;
   // 「某某讲某某」是讲座课，不是剧集
   if (/讲/.test(title) && !/[剧番季]/.test(title)) continue;
+  if (/^\d{3,4}\s*(短剧|影视|电影|剧集|资源)/.test(title)) continue;
   const key = `${title}|${row.quark}|${row.baidu}`;
   if (seen.has(key)) continue;
   seen.add(key);
@@ -236,6 +238,11 @@ for (const item of netdisk) {
     continue;
   }
   const title = tidyTitle(item.title);
+  // 「1120短剧」「1113短剧」这类按日期起的汇总帖，没有片名
+  if (/^\d{3,4}\s*(短剧|影视|电影|剧集|资源)/.test(title)) {
+    skipped.无片名++;
+    continue;
+  }
   // 清完只剩画质词的（「iMAX UHD」「NF DV」）不算片名
   if (!title) {
     skipped.无片名++;
