@@ -1,13 +1,53 @@
 {
-  "generatedAt": "2026-11-22T05:17:59.574Z",
+  "generatedAt": "2026-11-22T05:19:49.181Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
-  "total": 990,
-  "changed": 136,
+  "total": 991,
+  "changed": 137,
   "added": 53,
-  "updated": 20,
+  "updated": 21,
   "removed": 63,
   "items": [
+    {
+      "title": "奔跑吧·大湾区篇 奔跑吧特别季 2026 中 收藏 完结",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/27e1c089ad22"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1z5R8RcIShYd011yS_zh0yA?pwd=6666"
+      ],
+      "change": "removed",
+      "at": "2026-11-22T05:19:49.181Z"
+    },
+    {
+      "title": "百日谎言",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1WmEVT3Kw56VbSopurLuA0Q?pwd=e6dr",
+        "https://pan.baidu.com/s/1iMaPKKOo-EAmZTd6L7EYyg?pwd=asx6",
+        "https://pan.baidu.com/s/1a2UCX8WheMLeHWerLbmnkA?pwd=122u"
+      ],
+      "change": "updated",
+      "prevVersion": "—",
+      "at": "2026-11-22T05:19:49.181Z"
+    },
+    {
+      "title": "奔跑吧·大湾区篇 奔跑吧特别季 2026 中 收藏",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/27e1c089ad22"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1z5R8RcIShYd011yS_zh0yA?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:19:49.181Z"
+    },
     {
       "title": "凡人修仙传",
       "version": "176 / 171 / 172 / — / 更至201集 / 更200集 / 更新200集 / 更至199集",
@@ -107,19 +147,6 @@
       ],
       "change": "updated",
       "prevVersion": "5 / — / 更48集 / 更至47集",
-      "at": "2026-11-22T05:17:59.574Z"
-    },
-    {
-      "title": "奔跑吧·大湾区篇 奔跑吧特别季 2026 中 收藏 完结",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/27e1c089ad22"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1z5R8RcIShYd011yS_zh0yA?pwd=6666"
-      ],
-      "change": "added",
       "at": "2026-11-22T05:17:59.574Z"
     },
     {
@@ -1366,18 +1393,6 @@
         "https://pan.baidu.com/s/1v-bUVS__qdg8EDInq7r1eA?pwd=6666",
         "https://pan.baidu.com/s/19h0HdAT__U2xEO6i6jzCjg?pwd=n6q6",
         "https://pan.baidu.com/s/1Yai_ueW3NiP7N8BA0pAi0w?pwd=8888"
-      ],
-      "change": "removed",
-      "at": "2026-11-18T11:55:00.895Z"
-    },
-    {
-      "title": "百日谎言",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1iMaPKKOo-EAmZTd6L7EYyg?pwd=asx6",
-        "https://pan.baidu.com/s/1a2UCX8WheMLeHWerLbmnkA?pwd=122u"
       ],
       "change": "removed",
       "at": "2026-11-18T11:55:00.895Z"
