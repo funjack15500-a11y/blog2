@@ -22,7 +22,7 @@ function pickVersion(text) {
 // 帖子标题里的「卖点词」：画质、字幕、集数进度、附带季、发布标注。
 // 用词元（空格/括号切开后逐段）过滤，比一串正则替换干净得多——先前把「杜比视界」拆掉只留「视界」就是正则替换的坑。
 const NOISE_TOKEN =
-  /^(4k|8k|1080p|720p|2160p|hdr|dv|nf|web|web-dl|sdr|uhd|imax|bluray|蓝光|高清|超清|国语|粤语|国粤|中字|中文字幕|国语中字|中英|中英字幕|简繁|简中|简繁英|官中|双语|字幕|内封|内嵌|内嵌中英双字|内嵌简繁|内封简繁|内封官中|内封中英|内封简繁英|更|更新|更至|更新至|最新|已更新|全集|完结|完结季|纯净收藏版|臻享|臻彩|高码|高码率|60帧|双更|双更臻享|每周五|正式版|加码|重映版|版|修复|易和谐|nsfw|胆小勿看|首更|首播|加长版|加长|持更|流媒体|历史|战争|剧情|动作|惊悚|犯罪|悬疑|喜剧|爱情|科幻|奇幻|恐怖|冒险|传记|真人|漫改)$/i;
+  /^(4k|8k|1080p|720p|2160p|hdr|dv|nf|web|web-dl|sdr|uhd|imax|bluray|蓝光|高清|超清|国语|粤语|国粤|中字|中文字幕|国语中字|中英|中英字幕|简繁|简中|简繁英|官中|双语|字幕|内封|内嵌|内嵌中英双字|内嵌简繁|内封简繁|内封官中|内封中英|内封简繁英|更|更新|更至|更新至|最新|已更新|全集|完结|完结季|纯净收藏版|臻享|臻彩|高码|高码率|60帧|双更|双更臻享|每周五|正式版|加码|重映版|版|修复|易和谐|nsfw|胆小勿看|首更|首播|加长版|加长|持更|全|流媒体|历史|战争|剧情|动作|惊悚|犯罪|悬疑|喜剧|爱情|科幻|奇幻|恐怖|冒险|传记|真人|漫改)$/i;
 
 const CN_NUM = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10, 十一: 11, 十二: 12 };
 
@@ -45,9 +45,11 @@ function tidyTitle(raw) {
     .replace(/[更全]\s*[至新]?\s*\d+\s*集/g, " ")
     .replace(/\s+/g, " ")
     .trim();
-  title = title.replace(/^(教程|课程|资源|影视|动漫|韩剧|韩影|美剧|英剧|日剧|日影|国剧|台剧|港剧|漫剧|短剧|综艺|纪录片|新好看|好剧推荐|高分|推荐)\s*/, "").trim();
+  title = title.replace(/^(教程|课程|资源|影视|动漫|韩剧|韩影|美剧|英剧|日剧|日影|国剧|台剧|港剧|漫剧|短剧|综艺|纪录片|新好看|好剧推荐|高分|推荐|超前点映|点映|抢先看|音轨正常|画质正常|字幕正常)\s*/, "").trim();
   // 「《入地眼》主播：甩浪浪 完」这类署名后缀，不是片名的一部分
   title = title.replace(/\s*主播[：:]\s*\S+/g, " ").replace(/\s+|完$/g, " ").trim();
+  // 「谷雨 2026 张颂文主演大反派」：主演说明不是片名的一部分，连带后面一起切掉
+  title = title.replace(/\s*\S{0,4}主演.*$/g, " ").replace(/\s+/g, " ").trim();
   title = title.replace(/\s*\d+月\d+日(更新)?\s*$/, "").trim();
   title = title.replace(/[（(【「『]+[^）)】」』]*$/, "").trim();
   // 帖子标题常带 emoji 和一大段推广语，只留前面的片名
@@ -59,7 +61,7 @@ function tidyTitle(raw) {
   // 集数进度（「第179集」「更至103集」「全8集」「11.07期」）先整段去掉，免得粘在片名后面
   title = title
     .replace(/\p{Extended_Pictographic}/gu, " ")
-    .replace(/附[前面]*[0-9一二三四五六七八九十]+季[全集]*/g, " ")
+    .replace(/附[前面]*[0-9一二三四五六七八九十两]+季[全集]*/g, " ")
     .replace(/(?:至|到|更至|更新至|已更新|已更|全|共)?\s*第?\s*\d+\s*集/g, " ")
     .replace(/\d+\.\d+\s*期/g, " ")
     .replace(/(臻享|臻彩|加码|加长|重映|正式|纯净收藏|收藏|修复)版/g, " ")
@@ -76,7 +78,7 @@ function tidyTitle(raw) {
         !/^(动漫|动画|剧集|新剧|影片)$/.test(t) &&
         !/^\p{Script=Hangul}+$/u.test(t) &&
         !/(字幕|音轨|双语|中字)$/.test(t) &&
-        !/^附[前面]*[0-9一二三四五六七八九十]+季/.test(t) &&
+        !/^附[前面]*[0-9一二三四五六七八九十两]+季/.test(t) &&
         !/^含[0-9\-—~]/.test(t) &&
         !/版$/.test(t)
     );
@@ -111,7 +113,7 @@ function seriesKey(title) {
     .replace(/第?\d+\s*集/g, "")
     .replace(/Ⅱ|II/g, "2")
     .replace(/^(影视|动漫|电影|电视剧|韩剧|韩影|美剧|英剧|日剧|日影|国剧|台剧|港剧|泰剧|漫剧|短剧|综艺|纪录片|美剧|新好看)/, "")
-    .replace(/附[前面]*[0-9一二三四五六七八九十]+季.*$/g, "")
+    .replace(/附[前面]*[0-9一二三四五六七八九十两]+季.*$/g, "")
     .replace(/(1080p|720p|2160p|4k|8k|hdr|dv|nf|web|sdr|uhd|hq|imax|中字|中英|双语|字幕|内封|简繁|简中|官中|国语|粤语|臻彩|高码率|高码|纯净收藏版)/gi, "")
     .replace(/[^\p{L}\p{N}]/gu, "")
     .toLowerCase();
@@ -130,7 +132,7 @@ function pickType(text) {
   if (/讲/.test(text) && /\d+\s*集/.test(text)) return "课程";
   // 「资源荟萃」不止有剧，还混着课程、电子书、软件包。这些词的标题一律按资料包挡掉，
   // 否则「《运筹术》：…」「1524个无损音效包」会被当成电影塞进列表。
-  if (/资源汇总|资源包|音效|素材|字体|壁纸|模板|工具包|工具箱|软件|插件|教程|训练营|集训营|陪跑|变现|获客|跑通|方法论|心法|秘籍|法则|原理|策略|读本|讲义|手册|图鉴|词典|字典|宝典|大全|电子书|PDF|套装|全[两三四五六七八九十\d]+册|[0-9]+\s*册|合集|书单|资料|笔记|案例|报告|研报|清单|试卷|题库|课件|PPT|Vlog|拍摄|剪辑|小学|初中|高中|年级|课本|教材|一本通|剧本|全赛道|作品集|求职|竞争力/.test(text)) return "资料包";
+  if (/资源汇总|资源包|音效|素材|字体|壁纸|模板|工具包|工具箱|软件|插件|教程|训练营|集训营|陪跑|变现|获客|跑通|方法论|心法|秘籍|法则|原理|策略|读本|讲义|手册|图鉴|词典|字典|宝典|大全|电子书|PDF|套装|全[两三四五六七八九十\d]+册|[0-9]+\s*册|合集|书单|资料|笔记|案例|报告|研报|清单|试卷|题库|课件|PPT|Vlog|拍摄|剪辑|小学|初中|高中|年级|课本|教材|一本通|剧本|全赛道|作品集|求职|竞争力|完整流程|流程|从0到1|二创|日更|精品动画|开启孩子|智慧人生/.test(text)) return "资料包";
   if (/剧|番|季|集|电影|剧场版|综艺|纪录片|动漫|动画/.test(text)) return "影视";
   return "其他";
 }
@@ -220,6 +222,8 @@ for (const row of existingRows()) {
   // 「某某讲某某」是讲座课，不是剧集
   if (/讲/.test(title) && !/[剧番季]/.test(title)) continue;
   if (/^\d{3,4}\s*(短剧|影视|电影|剧集|资源)/.test(title)) continue;
+  // 「11.21 国剧 A、B、C」「11月21日短剧日更」这类多剧清单帖，一条顶十几部，会把列表刷成流水账
+  if (/^\d{1,2}\.\d{1,2}\s*[^、]*、/.test(title) || /短剧日更/.test(title) || /^\d+(\s+\d+)+$/.test(title)) continue;
   const key = `${title}|${row.quark}|${row.baidu}`;
   if (seen.has(key)) continue;
   seen.add(key);
@@ -240,6 +244,11 @@ for (const item of netdisk) {
   const title = tidyTitle(item.title);
   // 「1120短剧」「1113短剧」这类按日期起的汇总帖，没有片名
   if (/^\d{3,4}\s*(短剧|影视|电影|剧集|资源)/.test(title)) {
+    skipped.无片名++;
+    continue;
+  }
+  // 多剧清单帖、日期日记帖、纯数字垃圾标题，都不是单部资源
+  if (/^\d{1,2}\.\d{1,2}\s*[^、]*、/.test(title) || /短剧日更/.test(title) || /^\d+(\s+\d+)+$/.test(title)) {
     skipped.无片名++;
     continue;
   }
@@ -302,6 +311,26 @@ for (const row of rows) {
     (row.title.length === prev.title.length && String(row.updated || "") > String(prev.updated || ""));
   if (better) bestBySeries.set(key, row);
 }
+// 同一部剧的帖子里常有「A」与「A+主演/导演说明」两种写法，短系列名是长系列名的前缀时按短的算。
+function prefixMerge(map) {
+  const keys = [...map.keys()];
+  for (const longKey of keys) {
+    if (!map.has(longKey)) continue;
+    for (const shortKey of keys) {
+      if (shortKey === longKey || shortKey.length < 3) continue;
+      if (!longKey.startsWith(shortKey)) continue;
+      const shortRow = map.get(shortKey);
+      const longRow = map.get(longKey);
+      if (!shortRow || !longRow) continue;
+      if (shortRow.title.length <= longRow.title.length) {
+        map.delete(longKey);
+        break;
+      }
+    }
+  }
+}
+prefixMerge(bestBySeries);
+
 function canonTitle(title) {
   const key = seriesKey(title).replace(/第$/g, "");
   const best = bestBySeries.get(key);
