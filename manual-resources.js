@@ -20,4 +20,5 @@ window.MANUAL_RESOURCES=[
   {title:"我们这一家",version:"投递资源",category:"动漫 · 夸克网盘",updated:"2026-11-09",priority:100,quark:"https://pan.quark.cn/s/19afc53c2716#/list/share",baidu:""},
   {title:"我们这一家",version:"投递资源",category:"动漫 · 百度网盘",updated:"2026-11-09",priority:100,quark:"",baidu:"https://pan.baidu.com/s/1BiscmMNnrEkJZ7UXHXvb3A?pwd=6666"},
   {title:"我们这一家",version:"投递资源",category:"动漫 · 百度网盘",updated:"2026-11-09",priority:100,quark:"",baidu:"https://pan.baidu.com/s/1H7xg4Wb3lP6Jayz5yXdbRA?pwd=6666"},
+  {title:"斗破苍穹双帝之战",version:"投递资源",category:"动漫 · 百度网盘",updated:"2026-11-22",priority:100,quark:"",baidu:"https://pan.baidu.com/s/1LYu3QH7QeR857X4Vb4vjXA?pwd=6666"},
 ];

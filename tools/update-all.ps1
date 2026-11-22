@@ -55,12 +55,28 @@ try {
     exit 0
 }
 
-# 3. 触发抓取（服务端刷新要 2-4 分钟，超时也继续，数据可能已落库）
+# 3. 触发抓取（服务端刷新要 2-4 分钟；刚启动服务时会自己先跑一轮，此时 POST 返回 409）
 try {
+    $beforeRaw = (Invoke-WebRequest -Uri "http://127.0.0.1:3000/api/state" -UseBasicParsing -TimeoutSec 20).Content
+    $before = ([regex]::Match($beforeRaw, '"lastRefresh":"([^"]*)"')).Groups[1].Value
     $refresh = Invoke-RestMethod -Uri "http://127.0.0.1:3000/api/refresh" -Method Post -TimeoutSec 600
     Log "刷新完成：round=$($refresh.round) ok=$($refresh.okSources)/$($refresh.totalSources) active=$($refresh.activeCount)"
 } catch {
-    Log "刷新请求未完成：$($_.Exception.Message)"
+    Log "刷新请求未直接完成（$($_.Exception.Message)），等待服务端那轮跑完"
+    for ($i = 0; $i -lt 48; $i++) {
+        Start-Sleep -Seconds 10
+        try {
+            $nowRaw = (Invoke-WebRequest -Uri "http://127.0.0.1:3000/api/state" -UseBasicParsing -TimeoutSec 20).Content
+            $now = ([regex]::Match($nowRaw, '"lastRefresh":"([^"]*)"')).Groups[1].Value
+            if ($now -and $now -ne $before) {
+                $ok = ([regex]::Match($nowRaw, '"okSources":(\d+)')).Groups[1].Value
+                $round = ([regex]::Match($nowRaw, '"round":(\d+)')).Groups[1].Value
+                Log "服务端刷新已完成：round=$round ok=$ok last=$now"
+                break
+            }
+        } catch { }
+        if ($i -eq 47) { Log "等待刷新超时，继续用库里现有数据" }
+    }
 }
 
 # 4. 补解析帖内网盘链接（刷新只解析最近 30 条）
