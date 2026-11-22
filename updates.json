@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-22T03:13:48.185Z",
+  "generatedAt": "2026-11-22T05:17:59.574Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
-  "total": 954,
-  "changed": 122,
-  "added": 40,
-  "updated": 19,
+  "total": 990,
+  "changed": 136,
+  "added": 53,
+  "updated": 20,
   "removed": 63,
   "items": [
     {
@@ -17,6 +17,7 @@
         "https://pan.quark.cn/s/fed243db97cc",
         "https://pan.quark.cn/s/c02baddaa664",
         "https://pan.quark.cn/s/3a491a934e7d",
+        "https://pan.quark.cn/s/413b158dcb2d",
         "https://pan.quark.cn/s/c6c6853873bb",
         "https://pan.quark.cn/s/3c9d2fb57ef5",
         "https://pan.quark.cn/s/8c923439e878",
@@ -30,6 +31,7 @@
       "baidu": [
         "https://pan.baidu.com/s/1267IAxGYthJTzu7TzztrkQ?pwd=8888",
         "https://pan.baidu.com/s/1dfj2mNx-Q79TkqgQc4vxTw?pwd=nxrd",
+        "https://pan.baidu.com/s/1Bvi1nWIUDn1iPYPwrAupYA?pwd=4tj3",
         "https://pan.baidu.com/s/1WMMy4KHQbXQhqMOpcz5JFQ?pwd=8888",
         "https://pan.baidu.com/s/1Yqg-pixCp69msd-rAlKj4w?pwd=oioi",
         "https://pan.baidu.com/s/1fJdxWsbkcurprfmYqUIDTQ?pwd=8888",
@@ -38,28 +40,251 @@
         "https://pan.baidu.com/s/1bzqTernRMXAfY0qCbPjTJg?pwd=tu5n"
       ],
       "change": "updated",
-      "prevVersion": "176 / 171 / 172 / — / 更200集 / 更新200集 / 更至199集",
-      "at": "2026-11-22T03:13:48.185Z"
+      "prevVersion": "176 / 171 / 172 / — / 更至201集 / 更200集 / 更新200集 / 更至199集",
+      "at": "2026-11-22T05:17:59.574Z"
     },
     {
       "title": "择日飞升 2026",
-      "version": "— / 更至19集",
+      "version": "— / 更至21集 / 更至19集",
       "category": "网盘资源 · 影视",
       "quark": [
         "https://pan.quark.cn/s/6c5604149eb2",
+        "https://pan.quark.cn/s/e0129fb502b1",
         "https://pan.quark.cn/s/e68a3d971d51",
         "https://pan.quark.cn/s/769997b0a5b0",
         "https://pan.quark.cn/s/4dfa4b5ac636",
         "https://pan.quark.cn/s/79662c5c29c2"
       ],
       "baidu": [
+        "https://pan.baidu.com/s/1iRHpY2UPSi_S9Vw20ZJS3g?pwd=mu89",
         "https://pan.baidu.com/s/1ftUwAfN_9qvHSgqUmmnNLw?pwd=6666",
         "https://pan.baidu.com/s/1bN0oi-agOTrHGQlNwndgBg?pwd=8888",
         "https://pan.baidu.com/s/1zFMezFchoVXcwJo_EFHGuQ?pwd=u7iw"
       ],
       "change": "updated",
       "prevVersion": "— / 更至19集",
-      "at": "2026-11-22T03:13:48.185Z"
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "罪蓝之路",
+      "version": "全08集 / 全8集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/7b9b287b58af",
+        "https://pan.quark.cn/s/b6ff09e68f92",
+        "https://pan.quark.cn/s/f5117a2a5284",
+        "https://pan.quark.cn/s/86f13b9389dc"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1gWBfP_FdNTP8_h17F119kA?pwd=6ffw",
+        "https://pan.baidu.com/s/1-DaP74BnLSVvmgkJ9lSwdQ?pwd=54rb",
+        "https://pan.baidu.com/s/1EJeF8WCp1y3CixnTb5Xd5A?pwd=8888",
+        "https://pan.baidu.com/s/1wDbuRGTFgkPWk9KRxpIEBg?pwd=6666",
+        "https://pan.baidu.com/s/1IvRTXlqtQe69uO2qcIKY1g?pwd=v7wa"
+      ],
+      "change": "updated",
+      "prevVersion": "全8集",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "光阴之外",
+      "version": "5 / 更至49集 / — / 更48集 / 更至47集",
+      "category": "国漫（周一到周日） / 网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/31886befeaff",
+        "https://pan.quark.cn/s/8fa21e135948",
+        "https://pan.quark.cn/s/85b47d345cd5",
+        "https://pan.quark.cn/s/32e13a7db01f",
+        "https://pan.quark.cn/s/863bf16ab6f5",
+        "https://pan.quark.cn/s/5002f6488dd9"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1kImPaeBggw38DsI-ztNJBg?pwd=g5dh",
+        "https://pan.baidu.com/s/1yIq2--EOreQJhmydVlnZuA?pwd=8888",
+        "https://pan.baidu.com/s/1RWwNNZkqmW6X-shPmBFYSQ?pwd=6666",
+        "https://pan.baidu.com/s/1e73pceEzq1is6RbqJR433A?pwd=3g49",
+        "https://pan.baidu.com/s/11W42lDUbf7yJeNiQ14x5WQ?pwd=26ei"
+      ],
+      "change": "updated",
+      "prevVersion": "5 / — / 更48集 / 更至47集",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "奔跑吧·大湾区篇 奔跑吧特别季 2026 中 收藏 完结",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/27e1c089ad22"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1z5R8RcIShYd011yS_zh0yA?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "11月21日短剧日更",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1o0yae1wowIAFZk80Fw-iFA?pwd=119g"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "大王饶命3 2026 WEB-4K",
+      "version": "全16集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/0e28058696a1"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1VyvNn2n5cqlKIecYNpwKIA?pwd=6j29"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "孙子兵法 精品动画 开启孩子智慧人生",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/b2d911efd0b0"
+      ],
+      "baidu": [],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "文武 2026",
+      "version": "更3集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/ffdb253439f5"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1S6uO-wIWGxrdNiZVfi5SPQ?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "11.21 国剧 两京十五日、无声的回响、宝珠、多喜一家人、十万狂花入梦来",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/a930e0fd7f36",
+        "https://pan.quark.cn/s/86f55aabaf1e"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/10amQSQhyu0YXQZVWxxKcFQ?pwd=g233"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "音轨正常 大王饶命第三季",
+      "version": "全16集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/2b5ea5c1b58e"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1ADg0xPRHpaxVK8ACVdyx2Q?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "黑帮领地 全二季",
+      "version": "全10集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/2c8a8e735ed8"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1lj8rM9HpTUIwylpRC_WBNQ?pwd=8888"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "超前点映 大王饶命 第三季 全",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/a937c4321a2a"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/17QvpROv_t7ua_DyoMZXOHA?pwd=yun1"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "繁华落尽 第二季 中",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/5559edb535c6"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1tXDC7Jsz6tmap1yDYIm62g?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "蜜谍 Honey 2026 HLG",
+      "version": "更新3集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/256bc23458fe"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1FjMv4rRWYkQ2pq_CHzRSXQ?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "AI漫剧 从0到1的全流程制作",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1AqMRXzAyUpye2OJsD94tiw?pwd=tfeg"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "槲寄生谋杀案 第三季 2026 附前两季",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/4c030ed3984e"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1cwWDDQldwQ94NxIUtYi2mw?pwd=8888"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
+    },
+    {
+      "title": "槲寄生谋杀案 第三季",
+      "version": "更新3集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/d4e42799e4ce"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/17ozpuTi2NuCUVqB-7nyS0Q?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-22T05:17:59.574Z"
     },
     {
       "title": "谷雨",
@@ -332,22 +557,6 @@
       ],
       "baidu": [
         "https://pan.baidu.com/s/1gWXsXDKqeETZPRRtCHP-Wg?pwd=8888"
-      ],
-      "change": "added",
-      "at": "2026-11-21T03:19:54.365Z"
-    },
-    {
-      "title": "罪蓝之路",
-      "version": "全8集",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/f5117a2a5284",
-        "https://pan.quark.cn/s/86f13b9389dc"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1EJeF8WCp1y3CixnTb5Xd5A?pwd=8888",
-        "https://pan.baidu.com/s/1wDbuRGTFgkPWk9KRxpIEBg?pwd=6666",
-        "https://pan.baidu.com/s/1IvRTXlqtQe69uO2qcIKY1g?pwd=v7wa"
       ],
       "change": "added",
       "at": "2026-11-21T03:19:54.365Z"
@@ -1013,25 +1222,6 @@
       ],
       "change": "updated",
       "prevVersion": "182 / 175 / 更12集 / — / 更至218集",
-      "at": "2026-11-18T11:55:00.895Z"
-    },
-    {
-      "title": "光阴之外",
-      "version": "5 / — / 更48集",
-      "category": "国漫（周一到周日） / 网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/31886befeaff",
-        "https://pan.quark.cn/s/85b47d345cd5",
-        "https://pan.quark.cn/s/32e13a7db01f",
-        "https://pan.quark.cn/s/863bf16ab6f5"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1yIq2--EOreQJhmydVlnZuA?pwd=8888",
-        "https://pan.baidu.com/s/1RWwNNZkqmW6X-shPmBFYSQ?pwd=6666",
-        "https://pan.baidu.com/s/1e73pceEzq1is6RbqJR433A?pwd=3g49"
-      ],
-      "change": "updated",
-      "prevVersion": "5 / — / 更48集 / 更至47集",
       "at": "2026-11-18T11:55:00.895Z"
     },
     {
