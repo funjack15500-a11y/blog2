@@ -1,13 +1,355 @@
 {
-  "generatedAt": "2026-11-23T15:12:54.259Z",
+  "generatedAt": "2026-11-23T15:30:40.812Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
-  "total": 987,
-  "changed": 144,
-  "added": 46,
-  "updated": 22,
-  "removed": 76,
+  "total": 1035,
+  "changed": 162,
+  "added": 57,
+  "updated": 25,
+  "removed": 80,
   "items": [
+    {
+      "title": "百日谎言",
+      "version": "更14集 / —",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/87f0460fc482"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/10ko3op4MWKHekDDTfqv8hg?pwd=6666",
+        "https://pan.baidu.com/s/1WmEVT3Kw56VbSopurLuA0Q?pwd=e6dr",
+        "https://pan.baidu.com/s/1JWlMprKolWVj251R9MQf5Q?pwd=21s2",
+        "https://pan.baidu.com/s/1iMaPKKOo-EAmZTd6L7EYyg?pwd=asx6",
+        "https://pan.baidu.com/s/1a2UCX8WheMLeHWerLbmnkA?pwd=122u"
+      ],
+      "change": "updated",
+      "prevVersion": "—",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "好搭档2",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1gmwEU8V7DEXqHME_x3Kpzw?pwd=477i",
+        "https://pan.baidu.com/s/1bgy-i5Kq-tjZ4JYL15SRag?pwd=8p8h"
+      ],
+      "change": "updated",
+      "prevVersion": "—",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "一斩苍穹 2026 HQ",
+      "version": "更18集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/32aa679709d5",
+        "https://pan.quark.cn/s/b8de1bdd240a"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1q1XnP9-VP10If6IJit2UQQ?pwd=6666"
+      ],
+      "change": "removed",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "牧神记",
+      "version": "66 / 59 / 更至110集 / — / 更15集 / 更108集",
+      "category": "国漫（周一到周日） / 网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/b53acd773be1",
+        "https://pan.quark.cn/s/96ff2ed83c22",
+        "https://pan.quark.cn/s/88c1c84cf9b5",
+        "https://pan.quark.cn/s/46c40b17532b",
+        "https://pan.quark.cn/s/cc816929790f",
+        "https://pan.quark.cn/s/40b749a8bf05",
+        "https://pan.quark.cn/s/d2d46136ffa2",
+        "https://pan.quark.cn/s/7ff432cb0745"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1bXVeALFtqogWRunIpi63qQ?pwd=swzs",
+        "https://pan.baidu.com/s/1B35QF0L3hedwCNKrNUsxuA?pwd=8888",
+        "https://pan.baidu.com/s/1x_NA84qMtq5_DW5E6-BRwA?pwd=6666",
+        "https://pan.baidu.com/s/1r0Gqkp3idedm6xOxPaP2SQ?pwd=ha53",
+        "https://pan.baidu.com/s/1H8e_nqruCu96qE_XbFu1XQ?pwd=oioi"
+      ],
+      "change": "updated",
+      "prevVersion": "66 / 59 / — / 更15集 / 更108集",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "吞噬星空",
+      "version": "207 / 200 / —",
+      "category": "国漫（周一到周日） / 网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/98f935611677",
+        "https://pan.quark.cn/s/1b5fc851b350",
+        "https://pan.quark.cn/s/c699abb81de9",
+        "https://pan.quark.cn/s/7e45ebc5a1c3"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1oe1eB-kdXF7GksanFQrLSA?pwd=8888",
+        "https://pan.baidu.com/s/1aZ0G9uQoM53S29HsSyjn5Q?pwd=6666"
+      ],
+      "change": "updated",
+      "prevVersion": "207 / 200",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "仙逆",
+      "version": "124 / 117 / 更至168集 / —",
+      "category": "国漫（周一到周日） / 网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/45b6e7074e57",
+        "https://pan.quark.cn/s/a5f74eb2badc",
+        "https://pan.quark.cn/s/833918448c11",
+        "https://pan.quark.cn/s/800be55cb46c",
+        "https://pan.quark.cn/s/d68c708c8798",
+        "https://pan.quark.cn/s/3f03c2b0eb8d",
+        "https://pan.quark.cn/s/c86a42a0fb34",
+        "https://pan.quark.cn/s/a1afe61f0da8",
+        "https://pan.quark.cn/s/3405ddc1b57b"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/16DydRjpc8haXOClgiFmBGw?pwd=7eg8",
+        "https://pan.baidu.com/s/1NvgHSAOIPyp8qWpDk3dNNg?pwd=k59d",
+        "https://pan.baidu.com/s/1lDnQyeuuOpCa-6dtVIEI1w?pwd=6666",
+        "https://pan.baidu.com/s/1k64Y7LjRtcMVAc5edPbxTw?pwd=8888"
+      ],
+      "change": "updated",
+      "prevVersion": "124 / 117",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "一斩苍穹 2026",
+      "version": "更至19集 / — / 更19集 / 更18集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/d793d47de98d",
+        "https://pan.quark.cn/s/1de31145879c",
+        "https://pan.quark.cn/s/158d72b0a26a",
+        "https://pan.quark.cn/s/32aa679709d5",
+        "https://pan.quark.cn/s/b8de1bdd240a"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/14vwWqAD3PulV1hwcxG6irw?pwd=7tpg",
+        "https://pan.baidu.com/s/1or_Qm5p7mjBwvz4NrOy8pQ?pwd=8888",
+        "https://pan.baidu.com/s/1VZ233IjoklH3s2lpUTXMuQ?pwd=030s",
+        "https://pan.baidu.com/s/1q1XnP9-VP10If6IJit2UQQ?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "七龙珠超：比鲁斯 ドラゴンボール超 ビルス 2026",
+      "version": "更至7集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/16694d3cdb03"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/14dzv-kS9DoVbYkaaAugz-Q?pwd=7qjp"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "七龙珠超：比鲁斯 2026 更 CR",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/5c4e769329a3"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1nV0Z_RuAhUiW_dmbkaTAKg?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "Wonder Why",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1mPi1iAjIGXVVSNC8-f2cEQ?pwd=mpvb"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "镀金时代 第四季",
+      "version": "更新4集 / —",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/3a19fcf910b4"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1DaRreYGzIGX8nCwreRq36w?pwd=6666",
+        "https://pan.baidu.com/s/1_BMlsca_gI4pEpD2JjSxRw?pwd=5frd"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "梅格雷探案 第二季 2026",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1_DqM3TLNc87W7PuX5fzvQA?pwd=3gan"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "巴西剧 上帝之城：斗争蔓延 第2季 2026",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1Cr2PlVp-nq2foFv40bGf2A?pwd=c3xu"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "双帝之战 斗破苍穹·双帝之战 2026",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/1ttkQbKB1-GynPRVbMAb6DQ?pwd=t3mx"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "旺达幻视 2021",
+      "version": "全9集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/c7fa2dd9c4a4"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/14HQPoD6SCKj-Jbc5WLk6ow?pwd=8888"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "双帝之战 2026",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/f3efb0265ada"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1JUbIxzia2t9IcbCGwdpd8g?pwd=nys6"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "人生一串4 人生一串 第四季 2026",
+      "version": "更新3集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/c812abf462e8"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1Cydz_9uu2tKR2aPzNQrgBA?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "九年青春",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/09d2cb93606a"
+      ],
+      "baidu": [],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "今天是太阳雨 2026",
+      "version": "全24集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/de34588d7e11"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1cPQ5lhPHxVnxsORT3Ap8nw?pwd=kv4m"
+      ],
+      "change": "removed",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "分享个电视剧《今天是太阳雨》",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [],
+      "baidu": [
+        "https://pan.baidu.com/s/132cBYTqxIyIl2nb7Mj1azw"
+      ],
+      "change": "removed",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "七龙珠超：比鲁斯 2026 CR",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/5c4e769329a3"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1nV0Z_RuAhUiW_dmbkaTAKg?pwd=6666"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "斗破苍穹·双帝之战",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/a23965d51eda"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1dQAhjqQgTCCZHMea_12VlA?pwd=8888"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "《今天是太阳雨》",
+      "version": "全24集 / —",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/de34588d7e11"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1cPQ5lhPHxVnxsORT3Ap8nw?pwd=kv4m",
+        "https://pan.baidu.com/s/132cBYTqxIyIl2nb7Mj1azw"
+      ],
+      "change": "added",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
+    {
+      "title": "用豆包+即梦+可灵,零基础做AI漫剧",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/4d060ee4f930"
+      ],
+      "baidu": [],
+      "change": "removed",
+      "at": "2026-11-23T15:30:40.812Z"
+    },
     {
       "title": "罪蓝之路",
       "version": "全8集 / 全08集",
@@ -358,20 +700,6 @@
       "at": "2026-11-22T05:19:49.181Z"
     },
     {
-      "title": "百日谎言",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1WmEVT3Kw56VbSopurLuA0Q?pwd=e6dr",
-        "https://pan.baidu.com/s/1iMaPKKOo-EAmZTd6L7EYyg?pwd=asx6",
-        "https://pan.baidu.com/s/1a2UCX8WheMLeHWerLbmnkA?pwd=122u"
-      ],
-      "change": "updated",
-      "prevVersion": "—",
-      "at": "2026-11-22T05:19:49.181Z"
-    },
-    {
       "title": "奔跑吧·大湾区篇 奔跑吧特别季 2026 中 收藏",
       "version": "—",
       "category": "网盘资源 · 影视",
@@ -528,17 +856,6 @@
         "https://pan.baidu.com/s/11Y7RcG9cn9TE9brRM-Tnew?pwd=6666"
       ],
       "change": "removed",
-      "at": "2026-11-22T03:13:48.185Z"
-    },
-    {
-      "title": "好搭档2",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/1bgy-i5Kq-tjZ4JYL15SRag?pwd=8p8h"
-      ],
-      "change": "added",
       "at": "2026-11-22T03:13:48.185Z"
     },
     {
@@ -1156,20 +1473,6 @@
       "at": "2026-11-18T12:04:04.576Z"
     },
     {
-      "title": "一斩苍穹 2026 HQ",
-      "version": "更18集",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/32aa679709d5",
-        "https://pan.quark.cn/s/b8de1bdd240a"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1q1XnP9-VP10If6IJit2UQQ?pwd=6666"
-      ],
-      "change": "added",
-      "at": "2026-11-18T12:04:04.576Z"
-    },
-    {
       "title": "儿童纪录片分享",
       "version": "—",
       "category": "网盘资源 · 影视",
@@ -1202,19 +1505,6 @@
       ],
       "baidu": [
         "https://pan.baidu.com/s/1die_srVOTkbYSEf1NLxyyw?pwd=8888"
-      ],
-      "change": "added",
-      "at": "2026-11-18T12:04:04.576Z"
-    },
-    {
-      "title": "今天是太阳雨 2026",
-      "version": "全24集",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/de34588d7e11"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1cPQ5lhPHxVnxsORT3Ap8nw?pwd=kv4m"
       ],
       "change": "added",
       "at": "2026-11-18T12:04:04.576Z"
@@ -1396,18 +1686,6 @@
       ],
       "change": "updated",
       "prevVersion": "— / 更新10集",
-      "at": "2026-11-18T11:55:00.895Z"
-    },
-    {
-      "title": "牧神记",
-      "version": "66 / 59",
-      "category": "国漫（周一到周日）",
-      "quark": [
-        "https://pan.quark.cn/s/b53acd773be1"
-      ],
-      "baidu": [],
-      "change": "updated",
-      "prevVersion": "66 / 59 / — / 更15集 / 更108集",
       "at": "2026-11-18T11:55:00.895Z"
     },
     {
@@ -1924,17 +2202,6 @@
       ],
       "baidu": [],
       "change": "removed",
-      "at": "2026-11-18T11:52:11.473Z"
-    },
-    {
-      "title": "分享个电视剧《今天是太阳雨》",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [],
-      "baidu": [
-        "https://pan.baidu.com/s/132cBYTqxIyIl2nb7Mj1azw"
-      ],
-      "change": "added",
       "at": "2026-11-18T11:52:11.473Z"
     },
     {
