@@ -1,13 +1,36 @@
 {
-  "generatedAt": "2026-11-22T05:21:28.831Z",
+  "generatedAt": "2026-11-23T15:12:54.259Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
-  "total": 985,
+  "total": 987,
   "changed": 144,
   "added": 46,
   "updated": 22,
   "removed": 76,
   "items": [
+    {
+      "title": "罪蓝之路",
+      "version": "全8集 / 全08集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/7c31c45ed82a",
+        "https://pan.quark.cn/s/7b9b287b58af",
+        "https://pan.quark.cn/s/b6ff09e68f92",
+        "https://pan.quark.cn/s/f5117a2a5284",
+        "https://pan.quark.cn/s/86f13b9389dc"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1TA_PmSYyhT7IzDhR84Xaiw?pwd=v557",
+        "https://pan.baidu.com/s/1gWBfP_FdNTP8_h17F119kA?pwd=6ffw",
+        "https://pan.baidu.com/s/1-DaP74BnLSVvmgkJ9lSwdQ?pwd=54rb",
+        "https://pan.baidu.com/s/1EJeF8WCp1y3CixnTb5Xd5A?pwd=8888",
+        "https://pan.baidu.com/s/1wDbuRGTFgkPWk9KRxpIEBg?pwd=6666",
+        "https://pan.baidu.com/s/1IvRTXlqtQe69uO2qcIKY1g?pwd=v7wa"
+      ],
+      "change": "updated",
+      "prevVersion": "全08集 / 全8集",
+      "at": "2026-11-23T15:12:54.259Z"
+    },
     {
       "title": "11月21日短剧日更",
       "version": "—",
@@ -416,27 +439,6 @@
       ],
       "change": "updated",
       "prevVersion": "— / 更至19集",
-      "at": "2026-11-22T05:17:59.574Z"
-    },
-    {
-      "title": "罪蓝之路",
-      "version": "全08集 / 全8集",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/7b9b287b58af",
-        "https://pan.quark.cn/s/b6ff09e68f92",
-        "https://pan.quark.cn/s/f5117a2a5284",
-        "https://pan.quark.cn/s/86f13b9389dc"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1gWBfP_FdNTP8_h17F119kA?pwd=6ffw",
-        "https://pan.baidu.com/s/1-DaP74BnLSVvmgkJ9lSwdQ?pwd=54rb",
-        "https://pan.baidu.com/s/1EJeF8WCp1y3CixnTb5Xd5A?pwd=8888",
-        "https://pan.baidu.com/s/1wDbuRGTFgkPWk9KRxpIEBg?pwd=6666",
-        "https://pan.baidu.com/s/1IvRTXlqtQe69uO2qcIKY1g?pwd=v7wa"
-      ],
-      "change": "updated",
-      "prevVersion": "全8集",
       "at": "2026-11-22T05:17:59.574Z"
     },
     {
