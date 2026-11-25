@@ -1,13 +1,89 @@
 {
-  "generatedAt": "2026-11-25T11:49:24.662Z",
+  "generatedAt": "2026-11-25T11:53:35.079Z",
   "windowDays": 7,
   "site": "https://resourceai.de5.net/",
-  "total": 1073,
-  "changed": 184,
-  "added": 77,
-  "updated": 29,
-  "removed": 78,
+  "total": 1066,
+  "changed": 181,
+  "added": 71,
+  "updated": 30,
+  "removed": 80,
   "items": [
+    {
+      "title": "好看！再婚皇后 2026",
+      "version": "全10集",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/12432b39a661"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1bbBsSQiU6R9rbd2Yiffkqg?pwd=6666"
+      ],
+      "change": "removed",
+      "at": "2026-11-25T11:53:35.079Z"
+    },
+    {
+      "title": "3000个人物 写实+漫剧 +提示词资产汇总",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/8218cc5176ee"
+      ],
+      "baidu": [],
+      "change": "removed",
+      "at": "2026-11-25T11:53:35.079Z"
+    },
+    {
+      "title": "GPT+Claude+Higgsfield：全自动做美剧详细攻略",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/51dab5813168"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1gOJlezeEBIIfR-i0U_HwXA?pwd=mdy8"
+      ],
+      "change": "removed",
+      "at": "2026-11-25T11:53:35.079Z"
+    },
+    {
+      "title": "讲谈社·中国的历史第十季：清末、中华民国 已完结",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/579185170613"
+      ],
+      "baidu": [],
+      "change": "removed",
+      "at": "2026-11-25T11:53:35.079Z"
+    },
+    {
+      "title": "Michael Jackson 迈克尔杰克逊 黑胶无损音乐全集 +所有演唱会全集",
+      "version": "—",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/4839058e52d7"
+      ],
+      "baidu": [],
+      "change": "removed",
+      "at": "2026-11-25T11:53:35.079Z"
+    },
+    {
+      "title": "再婚皇后",
+      "version": "全10集 / 更至6集 / —",
+      "category": "网盘资源 · 影视",
+      "quark": [
+        "https://pan.quark.cn/s/12432b39a661",
+        "https://pan.quark.cn/s/e97d1e9e6f2c"
+      ],
+      "baidu": [
+        "https://pan.baidu.com/s/1bbBsSQiU6R9rbd2Yiffkqg?pwd=6666",
+        "https://pan.baidu.com/s/19IUYBEpheLfTd5rt5Orvgg?pwd=8888",
+        "https://pan.baidu.com/s/1mrc__AWGj0xX6mEJU4YpSQ?pwd=7ym7"
+      ],
+      "change": "updated",
+      "prevVersion": "更至6集 / 更新6集 / —",
+      "at": "2026-11-25T11:53:35.079Z"
+    },
     {
       "title": "现在就出发 第四季",
       "version": "—",
@@ -355,30 +431,6 @@
       "at": "2026-11-25T11:48:28.793Z"
     },
     {
-      "title": "好看！再婚皇后 2026",
-      "version": "全10集",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/12432b39a661"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1bbBsSQiU6R9rbd2Yiffkqg?pwd=6666"
-      ],
-      "change": "added",
-      "at": "2026-11-25T11:48:28.793Z"
-    },
-    {
-      "title": "3000个人物 写实+漫剧 +提示词资产汇总",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/8218cc5176ee"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-25T11:48:28.793Z"
-    },
-    {
       "title": "一切如你所见 2026年度最高评分电影纪录片",
       "version": "—",
       "category": "网盘资源 · 影视",
@@ -386,19 +438,6 @@
         "https://pan.quark.cn/s/648a6bb9fcd9"
       ],
       "baidu": [],
-      "change": "added",
-      "at": "2026-11-25T11:48:28.793Z"
-    },
-    {
-      "title": "GPT+Claude+Higgsfield：全自动做美剧详细攻略",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/51dab5813168"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1gOJlezeEBIIfR-i0U_HwXA?pwd=mdy8"
-      ],
       "change": "added",
       "at": "2026-11-25T11:48:28.793Z"
     },
@@ -412,28 +451,6 @@
       "baidu": [
         "https://pan.baidu.com/s/1OM0oCPCD8j6bk53_en73oA?pwd=8888"
       ],
-      "change": "added",
-      "at": "2026-11-25T11:48:28.793Z"
-    },
-    {
-      "title": "讲谈社·中国的历史第十季：清末、中华民国 已完结",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/579185170613"
-      ],
-      "baidu": [],
-      "change": "added",
-      "at": "2026-11-25T11:48:28.793Z"
-    },
-    {
-      "title": "Michael Jackson 迈克尔杰克逊 黑胶无损音乐全集 +所有演唱会全集",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/4839058e52d7"
-      ],
-      "baidu": [],
       "change": "added",
       "at": "2026-11-25T11:48:28.793Z"
     },
@@ -2153,22 +2170,6 @@
       "at": "2026-11-18T11:55:00.895Z"
     },
     {
-      "title": "再婚皇后",
-      "version": "更至6集 / 更新6集 / —",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/e97d1e9e6f2c",
-        "https://pan.quark.cn/s/12432b39a661"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/19IUYBEpheLfTd5rt5Orvgg?pwd=8888",
-        "https://pan.baidu.com/s/1bbBsSQiU6R9rbd2Yiffkqg?pwd=6666",
-        "https://pan.baidu.com/s/1mrc__AWGj0xX6mEJU4YpSQ?pwd=7ym7"
-      ],
-      "change": "removed",
-      "at": "2026-11-18T11:55:00.895Z"
-    },
-    {
       "title": "海军罪案调查处：纽约 第一季 2026",
       "version": "—",
       "category": "网盘资源 · 影视",
@@ -2468,43 +2469,6 @@
       ],
       "change": "removed",
       "at": "2026-11-18T11:55:00.895Z"
-    },
-    {
-      "title": "斗破苍穹 年番4 2025",
-      "version": "更至218集",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/e72994f4932a"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1CYttp_06lZBhzV5RmnuInA?pwd=9wry"
-      ],
-      "change": "removed",
-      "at": "2026-11-18T11:52:11.473Z"
-    },
-    {
-      "title": "漫剧 AI漫剧持械入宋 S1-10",
-      "version": "—",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/e5e20e531284"
-      ],
-      "baidu": [],
-      "change": "removed",
-      "at": "2026-11-18T11:52:11.473Z"
-    },
-    {
-      "title": "重生密码 2026",
-      "version": "更至3集",
-      "category": "网盘资源 · 影视",
-      "quark": [
-        "https://pan.quark.cn/s/7413bf3868de"
-      ],
-      "baidu": [
-        "https://pan.baidu.com/s/1dKO2UTQZ6C6uj1GP5Frvvg?pwd=8888"
-      ],
-      "change": "added",
-      "at": "2026-11-18T11:52:11.473Z"
     }
   ]
 }
